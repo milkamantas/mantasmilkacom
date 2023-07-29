@@ -1,0 +1,24 @@
+.heading,
+.paragraph {
+  align-self: stretch;
+  position: relative;
+  line-height: 28px;
+}
+.paragraph {
+  font-size: var(--desktop-paragraph-size);
+  line-height: 23px;
+}
+.paragraphs1DesktopAlignle {
+  position: relative;
+  width: 468px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  max-width: 468px;
+  text-align: left;
+  font-size: var(--desktop-h2-size);
+  color: var(--color-black);
+  font-family: var(--desktop-caption);
+}

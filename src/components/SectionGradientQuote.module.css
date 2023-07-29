@@ -1,0 +1,28 @@
+.quote {
+  flex: 1;
+  position: relative;
+  line-height: 2.5rem;
+  font-weight: 300;
+}
+.sectionGradient,
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrapper {
+  flex: 1;
+  align-items: flex-end;
+  max-width: 60rem;
+}
+.sectionGradient {
+  background: linear-gradient(-77.68deg, #011327, #05264b);
+  width: 90rem;
+  padding: var(--padding-101xl) 0;
+  box-sizing: border-box;
+  align-items: flex-start;
+  text-align: left;
+  font-size: var(--desktop-h1-size);
+  color: var(--color-white);
+  font-family: var(--desktop-caption);
+}
