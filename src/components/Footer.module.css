@@ -86,7 +86,7 @@
   box-sizing: border-box;
   justify-content: space-between;
   text-align: left;
-  font-size: var(--desktop-nav-link-size);
+  font-size: var(--desktop-h2-size);
   color: var(--color-gray);
-  font-family: var(--desktop-nav-link);
+  font-family: var(--desktop-caption);
 }

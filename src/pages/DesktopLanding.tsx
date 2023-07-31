@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 import styles from "./DesktopLanding.module.css";
 const DesktopLanding: FunctionComponent = () => {
   const onAboutMeClick = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='main']");
+    const anchor = document.querySelector("[data-scroll-to='header']");
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
@@ -41,7 +41,7 @@ const DesktopLanding: FunctionComponent = () => {
         subTitle="based in Vilnius, Lithuania"
         heroColor="#222"
       />
-      <main className={styles.main} data-scroll-to="main">
+      <main className={styles.main}>
         <div className={styles.sectionHi}>
           <div className={styles.wrapper}>
             <div className={styles.paragraph}>

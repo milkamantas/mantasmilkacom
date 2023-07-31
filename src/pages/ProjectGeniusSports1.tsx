@@ -1,4 +1,5 @@
 import { FunctionComponent, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import Header from "../components/Header1";
 import Hero from "../components/Hero";
 import SectionFluidImage from "../components/SectionFluidImage";
@@ -9,25 +10,16 @@ import SectionGradientImage from "../components/SectionGradientImage";
 import Footer from "../components/Footer";
 import styles from "./ProjectGeniusSports1.module.css";
 const ProjectGeniusSports1: FunctionComponent = () => {
-  const onAboutMeClick = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='main']");
-    if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
-    }
-  }, []);
+  const navigate = useNavigate();
 
-  const onProjectsClick = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='sectionProjects']");
-    if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
-    }
-  }, []);
+  const onAboutMeClick = useCallback(() => {
+    navigate("/");
+  }, [navigate]);
 
   return (
-    <div className={styles.projectgeniussports}>
+    <div className={styles.projectGeniussports}>
       <Header
         onAboutMeClick={onAboutMeClick}
-        onProjectsClick={onProjectsClick}
         onContactMeClick={onContactMeClick}
       />
       <Hero
@@ -65,7 +57,7 @@ const ProjectGeniusSports1: FunctionComponent = () => {
           </div>
         </div>
         <SectionFluidImage
-          iMG="/img3@2x.png"
+          iMG="/img-full@2x.png"
           caption="LiveStats Basketball in action at NCAA game Duke vs Kansas"
         />
         <div className={styles.sectionProjectOverview}>
@@ -310,7 +302,7 @@ const ProjectGeniusSports1: FunctionComponent = () => {
           </div>
         </div>
         <SectionFluidImage
-          iMG="/img4@2x.png"
+          iMG="/img@2x.png"
           caption="IceHockey LiveStats workshop in progress"
           sectionFluidImageHeight="42.06rem"
         />
@@ -461,7 +453,7 @@ const ProjectGeniusSports1: FunctionComponent = () => {
           </div>
         </div>
         <SectionFluidImage
-          iMG="/img5@2x.png"
+          iMG="/img1@2x.png"
           caption="One of the concepts born in IceHockey LiveStats workshop"
           sectionFluidImageHeight="42.06rem"
         />
@@ -542,7 +534,7 @@ const ProjectGeniusSports1: FunctionComponent = () => {
           </div>
         </div>
         <SectionFluidImage
-          iMG="/img@2x.png"
+          iMG="/img2@2x.png"
           caption="One of the concepts born in IceHockey LiveStats workshop"
           sectionFluidImageHeight="51.25rem"
         />

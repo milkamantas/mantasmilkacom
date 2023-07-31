@@ -10,7 +10,7 @@
   position: relative;
 }
 .paragraph {
-  font-size: var(--desktop-nav-link-size);
+  font-size: var(--desktop-h2-size);
   line-height: 1.88rem;
   font-weight: 100;
 }
@@ -29,9 +29,9 @@
 }
 .title {
   position: relative;
-  font-size: var(--desktop-nav-link-size);
+  font-size: var(--desktop-h2-size);
   line-height: 1.63rem;
-  font-family: var(--desktop-nav-link);
+  font-family: var(--desktop-caption);
   color: var(--color-white);
   text-align: left;
 }
@@ -71,7 +71,7 @@
   text-align: left;
   font-size: var(--desktop-paragraph-size);
   color: var(--color-black);
-  font-family: var(--desktop-nav-link);
+  font-family: var(--desktop-caption);
 }
 @media screen and (max-width: 420px) {
   .content,

@@ -90,7 +90,7 @@
   font-weight: 100;
 }
 .paragraph1 {
-  font-size: var(--desktop-nav-link-size);
+  font-size: var(--desktop-h2-size);
   line-height: 1.88rem;
   display: none;
 }
@@ -127,7 +127,7 @@
   text-align: left;
   font-size: var(--desktop-paragraph-size);
   color: var(--color-black);
-  font-family: var(--desktop-nav-link);
+  font-family: var(--desktop-caption);
 }
 .home {
   position: relative;
@@ -172,6 +172,7 @@
     padding-left: var(--padding-55xl);
     padding-top: 0;
     padding-right: var(--padding-55xl);
+    max-width: 59rem;
   }
   .sectionHi {
     padding: var(--padding-45xl) 0;
@@ -221,7 +222,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 0 var(--padding-5xl) 0;
+    padding: 0 var(--padding-base) 0;
+    max-width: 24.75rem;
   }
   .sectionHi {
     padding-left: 0;
