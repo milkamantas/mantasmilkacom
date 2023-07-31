@@ -32,7 +32,7 @@
   text-align: center;
   font-size: var(--desktop-caption-size);
   color: var(--gray-1);
-  font-family: var(--desktop-caption);
+  font-family: var(--desktop-nav-link);
 }
 @media screen and (max-width: 960px) {
   .imgLeftIcon {

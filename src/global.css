@@ -30,11 +30,11 @@ body {
 }
 :root {
   /* fonts */
-  --desktop-caption: "Helvetica Neue";
+  --desktop-nav-link: "Helvetica Neue";
   --font-inherit: inherit;
 
   /* font sizes */
-  --desktop-h2-size: 1.25rem;
+  --desktop-nav-link-size: 1.25rem;
   --desktop-caption-size: 0.75rem;
   --desktop-paragraph-size: 0.94rem;
   --desktop-title-size: 3rem;
@@ -56,7 +56,6 @@ body {
   --gap-0: 0rem;
   --gap-13xl: 2rem;
   --gap-5xs: 0.5rem;
-  --gap-45xl: 4rem;
   --gap-3xs: 0.63rem;
   --gap-21xl: 2.5rem;
 
@@ -72,8 +71,8 @@ body {
   --padding-29xl: 3rem;
   --padding-4xs: 0.56rem;
   --padding-9xs: 0.25rem;
-  --padding-101xl: 7.5rem;
   --padding-61xl: 5rem;
+  --padding-101xl: 7.5rem;
   --padding-xl: 1.25rem;
 
   /* border radiuses */

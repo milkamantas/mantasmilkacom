@@ -35,5 +35,3 @@ const ProjectListItem: FunctionComponent<ProjectListItemType> = ({
 };
 
 export default ProjectListItem;
-
-//How do I add link to my button in this page?

@@ -36,7 +36,7 @@
   text-align: left;
   font-size: var(--desktop-title-size);
   color: var(--color-gray);
-  font-family: var(--desktop-caption);
+  font-family: var(--desktop-nav-link);
 }
 @media screen and (max-width: 1200px) {
   .hero,
