@@ -1,0 +1,17 @@
+.logoChild {
+  position: relative;
+  width: 128px;
+  height: 60px;
+  object-fit: cover;
+  min-width: 128px;
+  min-height: 48px;
+}
+.logo {
+  position: relative;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-xs);
+  align-items: center;
+  justify-content: center;
+}

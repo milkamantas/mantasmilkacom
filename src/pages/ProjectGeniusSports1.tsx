@@ -30,7 +30,6 @@ const ProjectGeniusSports1: FunctionComponent = () => {
       <Header
         onAboutMeClick={onAboutMeClick}
         onProjectsClick={onProjectsClick}
-        onContactMeClick={onContactMeClick}
       />
       <Hero
         topSubtitle="Hey, I’m Mantas"
