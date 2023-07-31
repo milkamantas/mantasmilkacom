@@ -59,7 +59,7 @@ const Paragraphs2DesktopAlignRi: FunctionComponent<
     };
   }, [containerMaxWidth]);
 
-  const heading1Style: CSS.Properties = useMemo(() => {
+  const headingStyle: CSS.Properties = useMemo(() => {
     return {
       fontSize: headingFontSize,
       lineHeight: headingLineHeight,
@@ -67,13 +67,13 @@ const Paragraphs2DesktopAlignRi: FunctionComponent<
     };
   }, [headingFontSize, headingLineHeight, headingFontWeight]);
 
-  const paragraph2Style: CSS.Properties = useMemo(() => {
+  const paragraphStyle: CSS.Properties = useMemo(() => {
     return {
       lineHeight: paragraphLineHeight,
     };
   }, [paragraphLineHeight]);
 
-  const paragraph3Style: CSS.Properties = useMemo(() => {
+  const paragraph1Style: CSS.Properties = useMemo(() => {
     return {
       lineHeight: paragraphLineHeight1,
     };
@@ -86,14 +86,14 @@ const Paragraphs2DesktopAlignRi: FunctionComponent<
     >
       <div className={styles.container} style={containerStyle}>
         {showHeading && (
-          <div className={styles.heading} style={heading1Style}>
+          <div className={styles.heading} style={headingStyle}>
             {sectionTitle}
           </div>
         )}
-        <div className={styles.paragraph} style={paragraph2Style}>
+        <div className={styles.paragraph} style={paragraphStyle}>
           {gameDescription}
         </div>
-        <div className={styles.paragraph} style={paragraph3Style}>
+        <div className={styles.paragraph} style={paragraph1Style}>
           {gameRulesAndSizes}
         </div>
       </div>

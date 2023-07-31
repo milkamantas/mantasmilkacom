@@ -14,7 +14,7 @@ const Header: FunctionComponent<HeaderType> = ({
   onContactMeClick,
 }) => {
   return (
-    <header className={styles.header}>
+    <header className={styles.header} data-scroll-to="header">
       <div className={styles.logoWrap}>
         <div className={styles.mantasMilka}>Mantas Milka</div>
       </div>
@@ -24,16 +24,20 @@ const Header: FunctionComponent<HeaderType> = ({
           href="#HeroTitle"
           onClick={onAboutMeClick}
         >
-          About me
+          Home
         </a>
         <a
-          className={styles.aboutMe}
+          className={styles.projects}
           href="#Projects"
           onClick={onProjectsClick}
         >
           Projects
         </a>
-        <a className={styles.aboutMe} href="#Footer" onClick={onContactMeClick}>
+        <a
+          className={styles.projects}
+          href="#Footer"
+          onClick={onContactMeClick}
+        >
           Contact me
         </a>
       </nav>

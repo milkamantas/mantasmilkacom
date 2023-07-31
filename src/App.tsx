@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 import DesktopLanding from "./pages/DesktopLanding";
 import ProjectGeniusSports1 from "./pages/ProjectGeniusSports1";
-import DesktopProjectGS from "./pages/DesktopProjectGS";
 import { useEffect } from "react";
 
 function App() {
@@ -33,10 +32,6 @@ function App() {
         title = "LiveStats - Mantas Milka";
         metaDescription = "Work in Genius Sports";
         break;
-      case "/projectgs":
-        title = "";
-        metaDescription = "";
-        break;
     }
 
     if (title) {
@@ -57,7 +52,6 @@ function App() {
     <Routes>
       <Route path="/" element={<DesktopLanding />} />
       <Route path="/projectgeniussports" element={<ProjectGeniusSports1 />} />
-      <Route path="/projectgs" element={<DesktopProjectGS />} />
     </Routes>
   );
 }

@@ -8,13 +8,17 @@
   justify-content: center;
   max-width: 7.5rem;
 }
-.aboutMe {
+.aboutMe,
+.projects {
   text-decoration: none;
   flex: 1;
   position: relative;
-  font-weight: 300;
+  font-weight: 500;
   color: inherit;
   cursor: pointer;
+}
+.projects {
+  font-weight: 300;
 }
 .nav {
   margin: 0;
