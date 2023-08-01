@@ -40,3 +40,18 @@
   width: 100%;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 420px) {
+  .sectionImage, .flsConcept1 {
+    width: 150%;
+    padding: var(--padding-101xl) var(--padding-5xl);
+    object-fit: cover;
+    height: unset;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .sectionImage {
+    transform: translateX(-50%);
+    margin-left: 50%;
+  }
+}

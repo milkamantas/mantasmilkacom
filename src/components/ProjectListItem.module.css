@@ -78,6 +78,18 @@
   color: var(--color-black);
   font-family: var(--desktop-caption);
 }
+@media screen and (max-width: 960px) {
+  .projectLivestats {
+    flex-direction: column;
+  }
+  .content1 {
+    max-width: 100%;
+  }
+  .imgIcon {
+    max-height: 20rem;
+    width: 100%;
+  }
+}
 @media screen and (max-width: 420px) {
   .content,
   .imgIcon {

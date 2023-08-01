@@ -150,6 +150,9 @@
     gap: var(--gap-5xl);
     align-items: flex-end;
     justify-content: flex-start;
+    max-width: 60rem;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 960px) {
@@ -174,10 +177,10 @@
     gap: var(--gap-29xl);
     align-items: center;
     justify-content: flex-start;
-    padding-left: var(--padding-55xl);
+    padding-left: 0;
     padding-top: 0;
-    padding-right: var(--padding-55xl);
-    max-width: 59rem;
+    padding-right: 0;
+    max-width: 37.25rem;
   }
   .sectionHi {
     padding: var(--padding-45xl) 0;

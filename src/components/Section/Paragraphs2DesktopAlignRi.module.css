@@ -31,3 +31,9 @@
   color: var(--color-black);
   font-family: var(--desktop-caption);
 }
+@media screen and (max-width: 960px) {
+  .paragraph, .container, .paragraphs2DesktopAlignri {
+    max-width: none;
+    width: 100%;
+  }
+}

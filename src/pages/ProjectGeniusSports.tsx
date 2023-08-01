@@ -97,16 +97,6 @@ const ProjectGeniusSports: FunctionComponent = () => {
               gameDescription="Moreover, LiveStats boasts a user-centric design that ensures a seamless and intuitive experience for statisticians. The harmonization of core principles across different sports under the LiveStats umbrella is a testament to its ingenuity and innovation."
               gameRulesAndSizes="As a flagship product of Genius Sports, LiveStats continues to set the gold standard in sports data collection through its innovation, accuracy, and illustrious partnerships, making it an indispensable asset in the ever-evolving world of sports and betting."
               showHeading={false}
-              paragraphs2DesktopAlignRiPosition="unset"
-              paragraphs2DesktopAlignRiWidth="unset"
-              paragraphs2DesktopAlignRiMaxWidth="60rem"
-              paragraphs2DesktopAlignRiAlignSelf="stretch"
-              containerMaxWidth="29.25rem"
-              headingFontSize="48px"
-              headingLineHeight="4rem"
-              headingFontWeight="300"
-              paragraphLineHeight="1.44rem"
-              paragraphLineHeight1="1.44rem"
             />
           </div>
         </div>
