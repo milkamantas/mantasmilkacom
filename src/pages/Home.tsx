@@ -107,6 +107,7 @@ const DesktopLanding: FunctionComponent = () => {
               paragraph1="Our deep dive into our internal data revealed a concerning trend: our engagement and retention metrics were in jeopardy. With the emergence of new second-hand marketplaces each year, we recognized this as a looming threat to the sustainability and growth of our company. To address this, we conducted preliminary research to understand the strategies employed by our competitors. "
               paragraph2={`Armed with this knowledge, we resolved to explore and experiment with an innovative approach to content sharing. This led to the inception of the "Close-Ups" feature, aimed at providing a richer and more immersive experience for users. Through this project, our primary objectives were to bolster user engagement, enhance content quality, and ultimately fortify our position in the marketplace.`}
               iMG="/image-2@2x.png"
+              to="/projectvinted"
             />
             <ProjectListItem
               projectTitle="LiveStats"
@@ -114,6 +115,7 @@ const DesktopLanding: FunctionComponent = () => {
               paragraph1="In an era where data is king, sports statistics have taken center stage in various domains including media, betting markets, and fan engagement. Genius Sports, a titan in digital sports content, technology, and integrity services, aimed to revolutionize the way sports statistics are gathered and analyzed. "
               paragraph2="The MultiSport LiveStats project was born out of this vision, with a focus on American Football and Ice Hockey. The primary objective was to build applications that facilitated swift, accurate, and efficient data collection, which in turn would feed into betting data centers for real-time score updates. The stakes were high as every second and every data point had monetary implications."
               iMG="/1ncaalivestatsforfootballnovember7th-1@2x.png"
+              to="/projectgeniussports"
             />
           </div>
         </div>
