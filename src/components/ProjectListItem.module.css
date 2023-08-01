@@ -47,6 +47,11 @@
   padding: var(--padding-base) var(--padding-5xl);
   background-color: var(--color-gray);
   flex-direction: row;
+  text-decoration: none;
+  transition: all 0.420s ease-in-out;
+}
+.cta:hover {
+  background-color: #1f1f1f;
 }
 .content {
   flex: 1;
