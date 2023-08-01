@@ -57,6 +57,8 @@
   justify-content: flex-start;
   gap: var(--gap-5xl);
   max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
 }
 .sectionIntro {
   align-self: stretch;
@@ -94,6 +96,8 @@
   align-items: flex-start;
   gap: var(--gap-29xl);
   max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
 }
 .sectionProjectOverview {
   padding: var(--padding-61xl) 0;
@@ -276,6 +280,9 @@
 }
 .wrapper6 {
   gap: 4rem;
+  max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
 }
 .sectionDesign {
   padding: var(--padding-61xl) var(--padding-221xl);
@@ -325,6 +332,8 @@
   align-self: stretch;
   flex-direction: row;
   max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
 }
 .wrapper10 {
   width: 60rem;
@@ -333,6 +342,8 @@
 .wrapper11 {
   align-self: stretch;
   max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
 }
 .main,
 .projectGeniussports,

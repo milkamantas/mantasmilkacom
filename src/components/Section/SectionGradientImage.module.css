@@ -23,6 +23,8 @@
   justify-content: flex-end;
   gap: var(--gap-xs);
   max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
 }
 .sectionImage {
   background: linear-gradient(-77.68deg, #011327, #05264b);
@@ -35,4 +37,6 @@
   font-size: var(--desktop-caption-size);
   color: var(--color-white);
   font-family: var(--desktop-caption);
+  width: 100%;
+  margin: 0 auto;
 }
