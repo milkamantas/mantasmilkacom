@@ -79,10 +79,12 @@
 .platformdesktop {
   position: relative;
   background-color: var(--color-white);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  width: 1440px;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); */
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
   flex-direction: row;
-  padding: var(--padding-109xl) var(--padding-221xl);
+  padding: var(--padding-109xl) 0;
   box-sizing: border-box;
   justify-content: space-between;
   text-align: left;
