@@ -42,15 +42,15 @@ const Header: FunctionComponent<HeaderType> = ({
         </a>
       </nav>
       <ul className={styles.links}>
-        <div className={styles.cv}>
+        <li className={styles.cv}>
           <img className={styles.icon} alt="" src="/cv@2x.png" />
-        </div>
-        <div className={styles.cv}>
+        </li>
+        <li className={styles.cv}>
           <img className={styles.icon} alt="" src="/cv1@2x.png" />
-        </div>
-        <div className={styles.cv}>
+        </li>
+        <li className={styles.cv}>
           <img className={styles.icon} alt="" src="/cv2@2x.png" />
-        </div>
+        </li>
       </ul>
       <div className={styles.mobilemenu}>
         <div className={styles.mobilemenuClosed}>

@@ -1,10 +1,10 @@
 import { FunctionComponent, useCallback } from "react";
-import Header from "../components/Header1";
+import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Logo from "../components/Logo";
 import ProjectListItem from "../components/ProjectListItem";
 import Footer from "../components/Footer";
-import styles from "./DesktopLanding.module.css";
+import styles from "./Home.module.css";
 const DesktopLanding: FunctionComponent = () => {
   const onAboutMeClick = useCallback(() => {
     const anchor = document.querySelector("[data-scroll-to='header']");

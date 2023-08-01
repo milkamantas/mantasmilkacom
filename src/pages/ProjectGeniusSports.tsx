@@ -1,18 +1,22 @@
 import { FunctionComponent, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "../components/Header1";
+import Header from "../components/Header";
 import Hero from "../components/Hero";
 import SectionFluidImage from "../components/SectionFluidImage";
 import Paragraphs2DesktopAlignRi from "../components/Paragraphs2DesktopAlignRi";
 import SectionGradientQuote from "../components/SectionGradientQuote";
 import SectionFluidImageTwice from "../components/SectionFluidImageTwice";
-import SectionGradientImage from "../components/SectionGradientImage";
+import SectionGradientImage from "../components/Section/SectionGradientImage";
 import Footer from "../components/Footer";
-import styles from "./ProjectGeniusSports1.module.css";
-const ProjectGeniusSports1: FunctionComponent = () => {
+import styles from "./ProjectGeniusSports.module.css";
+const ProjectGeniusSports: FunctionComponent = () => {
   const navigate = useNavigate();
 
   const onAboutMeClick = useCallback(() => {
+    navigate("/");
+  }, [navigate]);
+
+  const onContactMeClick = useCallback(() => {
     navigate("/");
   }, [navigate]);
 
@@ -568,4 +572,4 @@ const ProjectGeniusSports1: FunctionComponent = () => {
   );
 };
 
-export default ProjectGeniusSports1;
+export default ProjectGeniusSports;
