@@ -60,6 +60,7 @@
   justify-content: flex-end;
   gap: var(--gap-5xl);
   max-width: 7.5rem;
+  list-style-type: none;
 }
 .mobilemenuClosedChild,
 .mobilemenuClosedItem {

@@ -1,8 +1,18 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useCallback } from "react";
 import styles from "./Footer.module.css";
+
 const Footer: FunctionComponent = () => {
+
+  const onContactMeClick = useCallback(() => {
+    const anchor = document.querySelector("[data-scroll-to='footerContainer']");
+    if (anchor) {
+      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+    }
+  }, []);
+
   return (
-    <div className={styles.platformdesktop}>
+    <div className={styles.platformdesktop}
+    data-scroll-to="platformdesktop">
       <div className={styles.logoWrap}>
         <div className={styles.mantasMilka}>Mantas Milka</div>
         <div className={styles.mantasmantasmilkacomParent}>
@@ -27,7 +37,7 @@ const Footer: FunctionComponent = () => {
       <div className={styles.nav}>
         <div className={styles.mantasMilka}>Projects</div>
         <div className={styles.closeUpsParent}>
-          <div className={styles.mantasmantasmilkacom}>Close-Ups</div>
+          {/* <div className={styles.mantasmantasmilkacom}>Close-Ups</div> */}
           <div className={styles.mantasmantasmilkacom}>LiveStats</div>
         </div>
       </div>

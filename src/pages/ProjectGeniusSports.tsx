@@ -2,10 +2,10 @@ import { FunctionComponent, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import SectionFluidImage from "../components/SectionFluidImage";
-import Paragraphs2DesktopAlignRi from "../components/Paragraphs2DesktopAlignRi";
-import SectionGradientQuote from "../components/SectionGradientQuote";
-import SectionFluidImageTwice from "../components/SectionFluidImageTwice";
+import SectionFluidImage from "../components/Section/SectionFluidImage";
+import Paragraphs2DesktopAlignRi from "../components/Section/Paragraphs2DesktopAlignRi";
+import SectionGradientQuote from "../components/Section/SectionGradientQuote";
+import SectionFluidImageTwice from "../components/Section/SectionFluidImageTwice";
 import SectionGradientImage from "../components/Section/SectionGradientImage";
 import Footer from "../components/Footer";
 import styles from "./ProjectGeniusSports.module.css";
@@ -17,8 +17,11 @@ const ProjectGeniusSports: FunctionComponent = () => {
   }, [navigate]);
 
   const onContactMeClick = useCallback(() => {
-    navigate("/");
-  }, [navigate]);
+    const anchor = document.querySelector("[data-scroll-to='platformdesktop']");
+    if (anchor) {
+      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+    }
+  }, []);
 
   return (
     <div className={styles.projectGeniussports}>
@@ -27,14 +30,14 @@ const ProjectGeniusSports: FunctionComponent = () => {
         onContactMeClick={onContactMeClick}
       />
       <Hero
-        topSubtitle="Hey, I’m Mantas"
+        topSubtitle=" "
         showTopSubtitle={false}
         title="LiveStats"
         subTitle="Genius Sports"
-        heroColor="unset"
+        heroColor="#ffffff"
         heroBackgroundImage={`url("/hero2@3x.png")`}
       />
-      <div className={styles.main}>
+      <main className={styles.main}>
         <div className={styles.sectionIntro}>
           <div className={styles.wrapper}>
             <div className={styles.content}>
@@ -308,7 +311,6 @@ const ProjectGeniusSports: FunctionComponent = () => {
         <SectionFluidImage
           iMG="/img@2x.png"
           caption="IceHockey LiveStats workshop in progress"
-          sectionFluidImageHeight="42.06rem"
         />
         <div className={styles.sectionDesign}>
           <div className={styles.wrapper6}>
@@ -406,7 +408,6 @@ const ProjectGeniusSports: FunctionComponent = () => {
           iMGLeft="/img-left1@2x.png"
           iMGRight="/img-right1@2x.png"
           caption="Stickies on the left and stickies on the right. Stickies were posted everywhere"
-          sectionFluidImageHeight="42.06rem"
         />
         <div className={styles.sectionAfls}>
           <div className={styles.wrapper1}>
@@ -495,7 +496,7 @@ const ProjectGeniusSports: FunctionComponent = () => {
           iMGLeft="/img-left2@2x.png"
           iMGRight="/img-right2@2x.png"
           caption="Axure prototypes were used heavily for usability testing and helped immensely to empathise with users"
-          sectionFluidImageHeight="31.25rem"
+          // sectionFluidImageHeight="31.25rem"
         />
         <div className={styles.sectionProjectOverview}>
           <div className={styles.wrapper10}>
@@ -566,7 +567,7 @@ const ProjectGeniusSports: FunctionComponent = () => {
           </div>
         </div>
         <SectionGradientImage />
-      </div>
+      </main>
       <Footer />
     </div>
   );
