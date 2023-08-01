@@ -31,7 +31,7 @@ const ProjectGeniusSports: FunctionComponent = () => {
         showTopSubtitle={false}
         title="LiveStats"
         subTitle="Genius Sports"
-        heroColor="unset"
+        heroColor="#ffffff"
         heroBackgroundImage={`url("/hero2@3x.png")`}
       />
       <div className={styles.main}>
