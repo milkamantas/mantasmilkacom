@@ -92,3 +92,21 @@
   color: var(--color-gray);
   font-family: var(--desktop-caption);
 }
+@media screen and (max-width: 960px) {
+  .platformdesktop {
+    max-width: 37.25rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .platformdesktop {
+    max-width: 24rem;
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+    flex-direction: column-reverse;
+    gap: var(--gap-29xl);
+  }
+  .nav {
+    margin-left: auto;
+  }
+}

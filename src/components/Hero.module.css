@@ -46,9 +46,9 @@
     box-sizing: border-box;
   }
   .wrapper {
-    padding-left: var(--padding-55xl);
+    padding-left: 0;
     padding-top: 0;
-    padding-right: var(--padding-55xl);
+    padding-right: 0;
   }
   .hero {
     align-items: center;
@@ -61,7 +61,8 @@
 @media screen and (max-width: 960px) {
   .wrapper {
     align-self: stretch;
-    width: auto;
+    width: 100%;
+    margin: 0 auto;
     align-items: flex-start;
     justify-content: flex-start;
     max-width: 37.25rem;
@@ -87,6 +88,9 @@
     padding-left: var(--padding-5xl);
     padding-right: var(--padding-5xl);
     box-sizing: border-box;
+    max-width: 24rem;
+    width: 100%;
+    margin: 0 auto;
   }
   .hero {
     background-position: 62% 100%;

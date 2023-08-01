@@ -377,6 +377,20 @@
     gap: var(--gap-5xl);
     align-items: flex-start;
     justify-content: flex-start;
+    max-width: 37.25rem;
+    width: 100%;
+  }
+  .wrapper1, .wrapper9, .wrapper10, .wrapper11 {
+    max-width: 37.25rem;
+    width: 100%;
+  }
+  .sectionDesign {
+    padding-left: 0;
+    padding-top: var(--padding-61xl);
+    padding-right: 0;
+    max-width: 37.25rem;
+    width: 100%;
+    margin: 0 auto;
   }
   .content4 {
     flex: unset;
@@ -399,6 +413,10 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
+  .paragraph1, .content2, .content4, .content20, .content26, .heading8, .paragraph2, .content8, .content1, .paragraph, .content, .content19, .heading10, .content25, .paragraph2, .paragraph19, .content19, .heading10, .paragraph10, .paragraph1 {
+    width: 100%;
+    max-width: none;
+  }
 }
 @media screen and (max-width: 420px) {
   .content20 {
@@ -410,5 +428,28 @@
     gap: var(--gap-5xl);
     align-items: flex-start;
     justify-content: flex-start;
+  }
+  .wrapper1 {
+    max-width: 24rem;
+    width: 100%;
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+  .wrapper9, .wrapper10, .wrapper11, .sectionIntro, .wrapper6 {
+    margin: 0 auto;
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    width: auto;
+    box-sizing: border-box;
+  }
+  .sectionIntro {
+    /* max-width: 24rem; */
+    /* width: 100%; */
+  }
+  .paragraph1, .content2, .content4, .content18, .content20, .content26, .heading8, .paragraph2, .content8, .content1, .paragraph, .content, .content19, .heading10, .content25, .paragraph2, .paragraph19, .content19, .heading10, .paragraph10, .paragraph1 {
+    width: auto;
+    max-width: none;
+    min-width: unset;
   }
 }

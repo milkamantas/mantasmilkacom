@@ -9,16 +9,6 @@ type Paragraphs2DesktopAlignRiType = {
   showHeading?: boolean;
 
   /** Style props */
-  paragraphs2DesktopAlignRiPosition?: Property.Position;
-  paragraphs2DesktopAlignRiWidth?: Property.Width;
-  paragraphs2DesktopAlignRiMaxWidth?: Property.MaxWidth;
-  paragraphs2DesktopAlignRiAlignSelf?: Property.AlignSelf;
-  containerMaxWidth?: Property.MaxWidth;
-  headingFontSize?: Property.FontSize;
-  headingLineHeight?: Property.LineHeight;
-  headingFontWeight?: Property.FontWeight;
-  paragraphLineHeight?: Property.LineHeight;
-  paragraphLineHeight1?: Property.LineHeight;
 };
 
 const Paragraphs2DesktopAlignRi: FunctionComponent<
@@ -28,72 +18,22 @@ const Paragraphs2DesktopAlignRi: FunctionComponent<
   gameDescription,
   gameRulesAndSizes,
   showHeading,
-  paragraphs2DesktopAlignRiPosition,
-  paragraphs2DesktopAlignRiWidth,
-  paragraphs2DesktopAlignRiMaxWidth,
-  paragraphs2DesktopAlignRiAlignSelf,
-  containerMaxWidth,
-  headingFontSize,
-  headingLineHeight,
-  headingFontWeight,
-  paragraphLineHeight,
-  paragraphLineHeight1,
 }) => {
-  const paragraphs2DesktopAlignRiStyle: CSS.Properties = useMemo(() => {
-    return {
-      position: paragraphs2DesktopAlignRiPosition,
-      width: paragraphs2DesktopAlignRiWidth,
-      maxWidth: paragraphs2DesktopAlignRiMaxWidth,
-      alignSelf: paragraphs2DesktopAlignRiAlignSelf,
-    };
-  }, [
-    paragraphs2DesktopAlignRiPosition,
-    paragraphs2DesktopAlignRiWidth,
-    paragraphs2DesktopAlignRiMaxWidth,
-    paragraphs2DesktopAlignRiAlignSelf,
-  ]);
-
-  const containerStyle: CSS.Properties = useMemo(() => {
-    return {
-      maxWidth: containerMaxWidth,
-    };
-  }, [containerMaxWidth]);
-
-  const headingStyle: CSS.Properties = useMemo(() => {
-    return {
-      fontSize: headingFontSize,
-      lineHeight: headingLineHeight,
-      fontWeight: headingFontWeight,
-    };
-  }, [headingFontSize, headingLineHeight, headingFontWeight]);
-
-  const paragraphStyle: CSS.Properties = useMemo(() => {
-    return {
-      lineHeight: paragraphLineHeight,
-    };
-  }, [paragraphLineHeight]);
-
-  const paragraph1Style: CSS.Properties = useMemo(() => {
-    return {
-      lineHeight: paragraphLineHeight1,
-    };
-  }, [paragraphLineHeight1]);
 
   return (
     <div
       className={styles.paragraphs2DesktopAlignri}
-      style={paragraphs2DesktopAlignRiStyle}
     >
-      <div className={styles.container} style={containerStyle}>
+      <div className={styles.container}>
         {showHeading && (
-          <div className={styles.heading} style={headingStyle}>
+          <div className={styles.heading}>
             {sectionTitle}
           </div>
         )}
-        <div className={styles.paragraph} style={paragraphStyle}>
+        <div className={styles.paragraph}>
           {gameDescription}
         </div>
-        <div className={styles.paragraph} style={paragraph1Style}>
+        <div className={styles.paragraph}>
           {gameRulesAndSizes}
         </div>
       </div>
