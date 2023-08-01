@@ -17,8 +17,11 @@ const ProjectGeniusSports: FunctionComponent = () => {
   }, [navigate]);
 
   const onContactMeClick = useCallback(() => {
-    navigate("/");
-  }, [navigate]);
+    const anchor = document.querySelector("[data-scroll-to='platformdesktop']");
+    if (anchor) {
+      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+    }
+  }, []);
 
   return (
     <div className={styles.projectGeniussports}>

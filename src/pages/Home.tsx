@@ -5,7 +5,9 @@ import Logo from "../components/Logo";
 import ProjectListItem from "../components/ProjectListItem";
 import Footer from "../components/Footer";
 import styles from "./Home.module.css";
+
 const DesktopLanding: FunctionComponent = () => {
+
   const onAboutMeClick = useCallback(() => {
     const anchor = document.querySelector("[data-scroll-to='header']");
     if (anchor) {
@@ -21,7 +23,7 @@ const DesktopLanding: FunctionComponent = () => {
   }, []);
 
   const onContactMeClick = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='footerContainer']");
+    const anchor = document.querySelector("[data-scroll-to='platformdesktop']");
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
@@ -100,14 +102,14 @@ const DesktopLanding: FunctionComponent = () => {
               <div className={styles.heading}>Projects</div>
               <div className={styles.paragraph1}>MultiSport @Genius Sports</div>
             </div>
-            <ProjectListItem
+            {/* <ProjectListItem
               projectTitle="Close-Ups"
               projectSubtitle="Team MORE @Vinted"
               paragraph1="Our deep dive into our internal data revealed a concerning trend: our engagement and retention metrics were in jeopardy. With the emergence of new second-hand marketplaces each year, we recognized this as a looming threat to the sustainability and growth of our company. To address this, we conducted preliminary research to understand the strategies employed by our competitors. "
               paragraph2={`Armed with this knowledge, we resolved to explore and experiment with an innovative approach to content sharing. This led to the inception of the "Close-Ups" feature, aimed at providing a richer and more immersive experience for users. Through this project, our primary objectives were to bolster user engagement, enhance content quality, and ultimately fortify our position in the marketplace.`}
               iMG="/image-2@2x.png"
               to="/projectvinted"
-            />
+            /> */}
             <ProjectListItem
               projectTitle="LiveStats"
               projectSubtitle="MultiSport @Genius Sports"

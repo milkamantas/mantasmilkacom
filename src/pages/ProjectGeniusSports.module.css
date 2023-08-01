@@ -217,7 +217,7 @@
   position: relative;
 }
 .paragraph19 {
-  font-size: var(--font-inherit);
+  font-size: var(--desktop-paragraph-size);
   line-height: 1.44rem;
   font-family: var(--font-inherit);
 }
@@ -291,7 +291,7 @@
 .paragraph27 {
   align-self: stretch;
   position: relative;
-  font-size: var(--font-inherit);
+  font-size: var(--desktop-paragraph-size);
   line-height: 1.44rem;
   font-family: var(--font-inherit);
   display: none;
