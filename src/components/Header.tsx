@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import styles from "./Header1.module.css";
+import styles from "./Header.module.css";
 
 type HeaderType = {
   /** Action props */
