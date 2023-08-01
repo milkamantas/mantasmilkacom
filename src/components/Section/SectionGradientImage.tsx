@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import styles from "./Section / Image.module.css";
+import styles from "./SectionGradientImage.module.css";
 const SectionGradientImage: FunctionComponent = () => {
   return (
     <div className={styles.sectionImage}>

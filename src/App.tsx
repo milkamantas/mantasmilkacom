@@ -4,8 +4,8 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import DesktopLanding from "./pages/DesktopLanding";
-import ProjectGeniusSports1 from "./pages/ProjectGeniusSports1";
+import Home from "./pages/Home";
+import ProjectGeniusSports from "./pages/ProjectGeniusSports";
 import { useEffect } from "react";
 
 function App() {
@@ -50,8 +50,8 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<DesktopLanding />} />
-      <Route path="/projectgeniussports" element={<ProjectGeniusSports1 />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/projectgeniussports" element={<ProjectGeniusSports />} />
     </Routes>
   );
 }
