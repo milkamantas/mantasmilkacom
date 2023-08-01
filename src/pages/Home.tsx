@@ -39,7 +39,6 @@ const DesktopLanding: FunctionComponent = () => {
         showTopSubtitle
         title="UX UI Designer"
         subTitle="based in Vilnius, Lithuania"
-        heroColor="#222"
       />
       <main className={styles.main}>
         <div className={styles.sectionHi}>

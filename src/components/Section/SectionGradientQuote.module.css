@@ -14,10 +14,12 @@
   flex: 1;
   align-items: flex-end;
   max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
 }
 .sectionGradient {
   background: linear-gradient(-77.68deg, #011327, #05264b);
-  width: 90rem;
+  width: 100%;
   padding: var(--padding-101xl) 0;
   box-sizing: border-box;
   align-items: flex-start;
