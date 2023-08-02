@@ -1,5 +1,7 @@
 import { FunctionComponent } from "react";
 import styles from "./Header.module.css";
+import MobileMenu from "./MobileMenu";
+import SocialNav from "./SocialNav";
 
 type HeaderType = {
   /** Action props */
@@ -41,28 +43,8 @@ const Header: FunctionComponent<HeaderType> = ({
           Contact me
         </a>
       </nav>
-      <ul className={styles.links}>
-        <li className={styles.cv}>
-          <img className={styles.icon} alt="" src="/cv@2x.png" />
-        </li>
-        <li className={styles.cv}>
-          <img className={styles.icon} alt="" src="/cv1@2x.png" />
-        </li>
-        <li className={styles.cv}>
-          <img className={styles.icon} alt="" src="/cv2@2x.png" />
-        </li>
-      </ul>
-      <div className={styles.mobilemenu}>
-        <div className={styles.mobilemenuClosed}>
-          <div className={styles.mobilemenuClosedChild} />
-          <div className={styles.mobilemenuClosedItem} />
-          <div className={styles.mobilemenuClosedChild} />
-        </div>
-        <div className={styles.mobilemenuOpen}>
-          <div className={styles.mobilemenuOpenChild} />
-          <div className={styles.mobilemenuOpenItem} />
-        </div>
-      </div>
+      <SocialNav />
+      <MobileMenu />
     </header>
   );
 };

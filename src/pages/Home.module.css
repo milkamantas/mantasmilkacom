@@ -57,13 +57,15 @@
   background: linear-gradient(180deg, #f6f6f6, #fff);
   display: flex;
   flex-direction: column;
-  padding: var(--padding-base) 5.13rem;
+  padding: 2rem 3.5rem;
   align-items: center;
   justify-content: flex-start;
-  gap: 1.25rem;
+  gap: 2rem;
   text-align: center;
   font-size: var(--desktop-h1-size);
   flex: 1;
+  box-sizing: border-box;
+  max-width: 50%;
 }
 .sectionHi,
 .wrapper {
@@ -154,6 +156,10 @@
     width: 100%;
     margin: 0 auto;
   }
+  .companies {
+    max-width: 100%;
+    gap: var(--gap-5xl);
+  }
 }
 @media screen and (max-width: 960px) {
   .paragraph {
@@ -166,6 +172,8 @@
     padding-left: 0;
     padding-top: var(--padding-base);
     padding-right: 0;
+    width: 100%;
+    max-width: 100%;
   }
   .companies,
   .sectionHi,
