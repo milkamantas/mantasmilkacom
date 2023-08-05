@@ -2,6 +2,7 @@ import { FunctionComponent } from "react";
 import styles from "./Header.module.css";
 import MobileMenu from "./MobileMenu";
 import SocialNav from "./SocialNav";
+import Nav from "./Nav";
 
 type HeaderType = {
   /** Action props */
@@ -16,35 +17,17 @@ const Header: FunctionComponent<HeaderType> = ({
   onContactMeClick,
 }) => {
   return (
-    <header className={styles.header} data-scroll-to="header">
+    <header className={styles.header}>
       <div className={styles.logoWrap}>
         <div className={styles.mantasMilka}>Mantas Milka</div>
       </div>
-      <nav className={styles.nav}>
-        <a
-          className={styles.aboutMe}
-          href="#HeroTitle"
-          onClick={onAboutMeClick}
-        >
-          Home
-        </a>
-        <a
-          className={styles.projects}
-          href="#Projects"
-          onClick={onProjectsClick}
-        >
-          Projects
-        </a>
-        <a
-          className={styles.projects}
-          href="#Footer"
-          onClick={onContactMeClick}
-        >
-          Contact me
-        </a>
-      </nav>
+      <Nav />
       <SocialNav />
-      <MobileMenu />
+      <MobileMenu
+        onAboutMeClick={onAboutMeClick}
+        onProjectsClick={onProjectsClick}
+        onContactMeClick={onContactMeClick}
+      />
     </header>
   );
 };

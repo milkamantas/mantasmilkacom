@@ -6,32 +6,33 @@ import ProjectListItem from "../components/ProjectListItem";
 import Footer from "../components/Footer";
 import styles from "./Home.module.css";
 
-const DesktopLanding: FunctionComponent = () => {
+const Home: FunctionComponent = () => {
 
   const onAboutMeClick = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='header']");
+    const anchor = document.querySelector("[data-scroll-to='header')]");
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
   }, []);
-
+  
   const onProjectsClick = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='sectionProjects']");
+    const anchor = document.querySelector("#sectionProjects");
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
   }, []);
-
+  
   const onContactMeClick = useCallback(() => {
     const anchor = document.querySelector("[data-scroll-to='platformdesktop']");
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
   }, []);
+  
 
   return (
-    <div className={styles.home}>
-      <Header
+    <main className={styles.home}>
+      <Header 
         onAboutMeClick={onAboutMeClick}
         onProjectsClick={onProjectsClick}
         onContactMeClick={onContactMeClick}
@@ -96,6 +97,7 @@ const DesktopLanding: FunctionComponent = () => {
         <div
           className={styles.sectionProjects}
           data-scroll-to="sectionProjects"
+          id="sectionProjects"
         >
           <div className={styles.wrapper1}>
             <div className={styles.content}>
@@ -122,8 +124,8 @@ const DesktopLanding: FunctionComponent = () => {
         </div>
       </main>
       <Footer />
-    </div>
+    </main>
   );
 };
 
-export default DesktopLanding;
+export default Home;

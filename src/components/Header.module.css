@@ -8,31 +8,6 @@
   justify-content: center;
   max-width: 7.5rem;
 }
-.aboutMe,
-.projects {
-  text-decoration: none;
-  flex: 1;
-  position: relative;
-  font-weight: 500;
-  color: inherit;
-  cursor: pointer;
-}
-.projects {
-  font-weight: 300;
-}
-.nav {
-  margin: 0;
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  max-width: 39.5rem;
-  text-align: center;
-  font-size: var(--desktop-h2-size);
-  color: var(--color-gray);
-  font-family: var(--desktop-caption);
-}
 .header {
   flex-direction: row;
   align-items: center;
@@ -49,17 +24,19 @@
   font-size: var(--desktop-h2-size);
   color: var(--color-gray);
   font-family: var(--desktop-caption);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 1;
 }
 @media screen and (max-width: 960px) {
   .logoWrap {
     width: auto;
     align-self: unset;
   }
-  .nav {
-    flex: 1;
-  }
-  .links,
-  .nav {
+  .links {
     display: none;
   }
   .mobilemenu {
@@ -74,8 +51,7 @@
   }
 }
 @media screen and (max-width: 420px) {
-  .links,
-  .nav {
+  .links {
     display: none;
   }
   .mobilemenuClosed {

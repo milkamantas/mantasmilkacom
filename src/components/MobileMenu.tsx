@@ -1,31 +1,46 @@
 import { FunctionComponent, useState } from "react";
 import styles from "./MobileMenu.module.css";
+import { IoMdMenu, IoMdClose } from "react-icons/io";
+import { IconContext } from "react-icons";
+import Nav from "./Nav";
+import { NavType } from "./Nav"; // Here's the import
 
-const MobileMenu: FunctionComponent = () => {
+const MobileMenu: FunctionComponent<NavType> = ({
+  onAboutMeClick,
+  onProjectsClick,
+  onContactMeClick,
+}) => {
+  const [isOpen, setIsOpen] = useState(false);
 
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
-
-    return (
-        <div className={styles.mobilemenu}>
-            <div 
-            className={styles.mobilemenuClosed} 
-            onClick={() => setIsOpen(!isOpen)}
-            style={{display: isOpen ? "none" : "flex"}}
-            >
-                <div className={styles.mobilemenuClosedChild} />
-                <div className={styles.mobilemenuClosedItem} />
-                <div className={styles.mobilemenuClosedChild} />
-            </div>
-            <div className={styles.mobilemenuOpen}>
-                <div className={styles.mobilemenuOpenChild} />
-                <div className={styles.mobilemenuOpenItem} />
-            </div>
-        </div>
-    );
-}
+  return (
+    <div className={styles.mobilemenu}>
+      <div
+        className={styles.mobilemenuClosed}
+        onClick={() => setIsOpen(true)}
+        style={{ display: isOpen ? "none" : "flex" }}
+      >
+        <IconContext.Provider value={{ color: "black", size: "1.5em" }}>
+          <IoMdMenu />
+        </IconContext.Provider>
+      </div>
+      <div
+        className={styles.mobilemenuOpen}
+        onClick={() => setIsOpen(false)}
+        style={{ display: isOpen ? "flex" : "none" }}
+      >
+        <IconContext.Provider value={{ color: "black", size: "1.5em" }}>
+          <IoMdClose />
+        </IconContext.Provider>
+      </div>
+      <Nav
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        onAboutMeClick={onAboutMeClick}
+        onProjectsClick={onProjectsClick}
+        onContactMeClick={onContactMeClick}
+      />
+    </div>
+  );
+};
 
 export default MobileMenu;
