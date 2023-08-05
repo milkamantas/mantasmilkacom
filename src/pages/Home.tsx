@@ -9,7 +9,7 @@ import styles from "./Home.module.css";
 const Home: FunctionComponent = () => {
 
   const onAboutMeClick = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='header')]");
+    const anchor = document.querySelector("[data-scroll-to='main']");
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
@@ -31,7 +31,10 @@ const Home: FunctionComponent = () => {
   
 
   return (
-    <main className={styles.home}>
+    <main className={styles.home}
+    data-scroll-to="main"
+    id="main"
+    >
       <Header 
         onAboutMeClick={onAboutMeClick}
         onProjectsClick={onProjectsClick}
