@@ -16,6 +16,12 @@ const ProjectGeniusSports: FunctionComponent = () => {
     navigate("/");
   }, [navigate]);
 
+  // onProjectsClick right now naviates to the Home.tsx, but does not scroll to the projects section
+  // Rewrite the code so that it scrolls to the projects section
+  const onProjectsClick = () => {
+    navigate("/", { state: { scrollTo: "sectionProjects" } });
+  };  
+
   const onContactMeClick = useCallback(() => {
     const anchor = document.querySelector("[data-scroll-to='platformdesktop']");
     if (anchor) {
@@ -27,6 +33,7 @@ const ProjectGeniusSports: FunctionComponent = () => {
     <div className={styles.projectGeniussports}>
       <Header
         onAboutMeClick={onAboutMeClick}
+        onProjectsClick={onProjectsClick}
         onContactMeClick={onContactMeClick}
       />
       <Hero
