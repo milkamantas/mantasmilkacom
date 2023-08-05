@@ -39,6 +39,7 @@
   font-size: var(--desktop-title-size);
   color: var(--color-gray);
   font-family: var(--desktop-caption);
+  margin-top: 88px;
 }
 @media screen and (max-width: 1200px) {
   .hero,

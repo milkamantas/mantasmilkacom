@@ -1,20 +1,21 @@
 import { FunctionComponent } from "react";
 import styles from "./SocialNav.module.css";
 
-type SocialNavItem = {
-  image?: string;
-  link?: string;
-};
+const SocialNav: FunctionComponent = () => {
+    return (
+        <ul className={styles.links}>
+            <li className={styles.cv}>
+                <img className={styles.icon} alt="" src="/cv@2x.png" />
+            </li>
+            <li className={styles.cv}>
+                <img className={styles.icon} alt="" src="/cv1@2x.png" />
+            </li>
+            <li className={styles.cv}>
+                <img className={styles.icon} alt="" src="/cv2@2x.png" />
+            </li>
+        </ul>
+    )
 
-const SocialNav: FunctionComponent<SocialNavItem> = ({ 
-  image,
-  link,
- }) => {
-  return (
-    <div className={styles.logo}>
-      <img className={styles.logoChild} alt="" src={image} />
-    </div>
-  );
 };
 
 export default SocialNav;

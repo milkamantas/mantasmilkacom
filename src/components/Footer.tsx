@@ -4,7 +4,7 @@ import styles from "./Footer.module.css";
 const Footer: FunctionComponent = () => {
 
   const onContactMeClick = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='footerContainer']");
+    const anchor = document.querySelector("[data-scroll-to='platformdesktop']");
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
