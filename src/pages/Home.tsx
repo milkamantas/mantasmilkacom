@@ -1,4 +1,5 @@
-import { FunctionComponent, useCallback } from "react";
+import { FunctionComponent, useCallback, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Logo from "../components/Logo";
@@ -7,6 +8,20 @@ import Footer from "../components/Footer";
 import styles from "./Home.module.css";
 
 const Home: FunctionComponent = () => {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      const anchor = document.querySelector(`#${location.state.scrollTo}`);
+      if (anchor) {
+        window.setTimeout(() => {
+          anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+        }, 0);
+      }
+    }
+  }, [location.state]);
+  
 
   const onAboutMeClick = useCallback(() => {
     const anchor = document.querySelector("[data-scroll-to='main']");
