@@ -5,10 +5,11 @@
   object-fit: cover;
   min-width: 100%px;
   min-height: 100%;
+  background-blend-mode: multiply;
 }
 .logo {
   position: relative;
-  background-color: var(--color-white);
+  /* background-color: var(--color-white); */
   display: flex;
   flex-direction: column;
   padding: var(--padding-xs);
