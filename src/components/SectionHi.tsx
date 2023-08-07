@@ -1,6 +1,7 @@
 import styles from "./SectionHi.module.css";
 import { FunctionComponent } from "react";
 import Logo from "../components/Logo";
+import Section from "../components/Section";
 
 
 export type SectionHi = {
@@ -9,6 +10,7 @@ export type SectionHi = {
 
 const SectionHi: FunctionComponent = () => {
     return (
+      <Section name="Hi" type="wrapped">
         <div className={styles.sectionHi}>
           <div className={styles.wrapper}>
             <div className={styles.paragraph}>
@@ -59,6 +61,7 @@ const SectionHi: FunctionComponent = () => {
             </div>
           </div>
         </div>
+      </Section>
     )
 };
 
