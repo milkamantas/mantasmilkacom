@@ -3,12 +3,6 @@
   margin: 0;
   position: relative;
 }
-.hiThere {
-  font-size: var(--hero-title-size);
-  line-height: 5.5rem;
-  font-weight: 100;
-  font-family: inherit;
-}
 .imAProduct {
   align-self: stretch;
   line-height: 1.44rem;
@@ -36,15 +30,6 @@
   justify-content: flex-start;
   gap: var(--gap-xs);
 }
-.companies1 {
-  margin: 0;
-  align-self: stretch;
-  position: relative;
-  font-size: inherit;
-  line-height: 2.5rem;
-  font-weight: 100;
-  font-family: inherit;
-}
 .logoul {
   align-self: stretch;
   display: flex;
@@ -68,26 +53,6 @@
   box-sizing: border-box;
   max-width: 50%;
 }
-.sectionHi,
-.wrapper {
-  align-self: stretch;
-  display: flex;
-}
-.wrapper {
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: center;
-  gap: var(--gap-5xl);
-  max-width: 60rem;
-  width: 100%;
-  margin: 0 auto;
-}
-.sectionHi {
-  flex-direction: column;
-  padding: var(--padding-109xl) 0;
-  align-items: center;
-  justify-content: flex-start;
-}
 .heading,
 .paragraph1 {
   align-self: stretch;
@@ -101,20 +66,13 @@
   line-height: 1.88rem;
   display: none;
 }
-.content,
-.wrapper1 {
+.content {
   align-self: stretch;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-xs);
-}
-.wrapper1 {
-  gap: var(--gap-29xl);
-  max-width: 60rem;
-  width: 100%;
-  margin: 0 auto;
 }
 .sectionProjects {
   align-self: stretch;
@@ -222,12 +180,9 @@
     flex: unset;
     align-self: stretch;
   }
-  .companies1 {
-    text-align: center;
-  }
   .companies {
     gap: var(--gap-5xl);
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     padding-left: 0;
     box-sizing: border-box;

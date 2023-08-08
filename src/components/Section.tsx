@@ -3,16 +3,18 @@ import styles from "./Section.module.css";
 
 type SectionType = {
     name: string;
-    type: "fluid" | "wrapped";
+    type: "fluid" | "wrapper";
+    flexDirection: "row" | "column";
     children: ReactNode;
 };
 
-const Section: FunctionComponent<SectionType> = ({ name, type, children }) => {
-    const wrapperClass = type === 'fluid' ? styles.fluid : styles.wrapped;
+const Section: FunctionComponent<SectionType> = ({ name, type, children, flexDirection }) => {
+    const wrapperClass = type === 'fluid' ? styles.fluid : styles.wrapper;
+    const flexDirectionClass = flexDirection === 'row' ? styles.row : styles.column;
 
     return (
     <div className={styles.section} id={name} data-scroll-to={name}>
-        <div className={wrapperClass}>
+        <div className={`${wrapperClass} ${flexDirectionClass}`}>
             {children}
         </div>
     </div>
