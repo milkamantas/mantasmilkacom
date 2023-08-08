@@ -11,7 +11,7 @@
   line-height: 4rem;
 }
 .uxUiDesigner {
-  font-size: var(--desktop-hero-title-size);
+  font-size: var(--hero-title-size);
   line-height: 5.5rem;
 }
 .hero,
@@ -36,7 +36,7 @@
   background-repeat: no-repeat;
   background-position: top;
   text-align: left;
-  font-size: var(--desktop-title-size);
+  font-size: var(--title-size);
   color: var(--color-gray);
   font-family: var(--desktop-caption);
   margin-top: 88px;

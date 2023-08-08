@@ -4,7 +4,7 @@
   position: relative;
 }
 .heading {
-  font-size: var(--desktop-h2-size);
+  font-size: var(--h2-size);
   line-height: 28px;
 }
 .paragraph {
@@ -27,7 +27,7 @@
   width: 960px;
   max-width: 960px;
   text-align: left;
-  font-size: var(--desktop-paragraph-size);
+  font-size: var(--paragraph-size);
   color: var(--color-black);
   font-family: var(--desktop-caption);
 }

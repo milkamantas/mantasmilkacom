@@ -50,7 +50,7 @@
   justify-content: flex-start;
   gap: var(--gap-5xl);
   text-align: center;
-  font-size: var(--desktop-caption-size);
+  font-size: var(--caption-size);
   color: var(--color-white);
 }
 .logoWrap {
@@ -88,7 +88,7 @@
   box-sizing: border-box;
   justify-content: space-between;
   text-align: left;
-  font-size: var(--desktop-h2-size);
+  font-size: var(--h2-size);
   color: var(--color-gray);
   font-family: var(--desktop-caption);
 }

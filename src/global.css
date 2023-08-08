@@ -34,12 +34,12 @@ body {
   --font-inherit: inherit;
 
   /* font sizes */
-  --desktop-h2-size: 1.25rem;
-  --desktop-caption-size: 0.75rem;
-  --desktop-paragraph-size: 0.94rem;
-  --desktop-title-size: 3rem;
-  --desktop-hero-title-size: 5rem;
-  --desktop-h1-size: 2rem;
+  --h1-size: 6rem;
+  --h2-size: 3rem;
+  --caption-size: 0.75rem;
+  --paragraph-size: 0.94rem;
+  --title-size: 3rem;
+  --hero-title-size: 5rem;
   --font-size-41xl: 3.75rem;
   --font-size-21xl: 2.5rem;
 

@@ -6,7 +6,7 @@
   font-weight: 300;
 }
 .paragraph {
-  font-size: var(--desktop-h2-size);
+  font-size: var(--h2-size);
   line-height: 1.88rem;
 }
 .content {
@@ -30,7 +30,7 @@
   display: none;
 }
 .paragraph1 {
-  font-size: var(--desktop-paragraph-size);
+  font-size: var(--paragraph-size);
   line-height: 1.44rem;
 }
 .content1,
@@ -46,7 +46,7 @@
   justify-content: flex-start;
   gap: var(--gap-xs);
   max-width: 29.25rem;
-  font-size: var(--desktop-title-size);
+  font-size: var(--title-size);
 }
 .sectionIntro,
 .wrapper {
@@ -64,7 +64,7 @@
   align-self: stretch;
   padding: var(--padding-61xl) 0;
   justify-content: space-between;
-  font-size: var(--desktop-hero-title-size);
+  font-size: var(--hero-title-size);
 }
 .heading2,
 .paragraph2 {
@@ -72,7 +72,7 @@
   position: relative;
 }
 .heading2 {
-  font-size: var(--desktop-title-size);
+  font-size: var(--title-size);
   line-height: 4rem;
   font-weight: 300;
 }
@@ -133,12 +133,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: var(--gap-5xl);
-  font-size: var(--desktop-h2-size);
+  font-size: var(--h2-size);
 }
 .heading8 {
   align-self: stretch;
   position: relative;
-  font-size: var(--desktop-h1-size);
+  font-size: var(--h1-size);
   line-height: 2.5rem;
   font-weight: 300;
 }
@@ -153,17 +153,17 @@
   align-items: flex-start;
   gap: var(--gap-xs);
   max-width: 29.25rem;
-  font-size: var(--desktop-paragraph-size);
+  font-size: var(--paragraph-size);
 }
 .sectionChallenges {
   padding: var(--padding-109xl) 0;
   align-items: center;
-  font-size: var(--desktop-title-size);
+  font-size: var(--title-size);
 }
 .paragraph12 {
   align-self: stretch;
   position: relative;
-  font-size: var(--desktop-paragraph-size);
+  font-size: var(--paragraph-size);
   line-height: 1.44rem;
   display: none;
 }
@@ -175,7 +175,7 @@
   justify-content: flex-start;
   gap: var(--gap-xs);
   max-width: 29.25rem;
-  font-size: var(--desktop-title-size);
+  font-size: var(--title-size);
 }
 .heading10 {
   align-self: stretch;
@@ -185,7 +185,7 @@
 }
 .content10 {
   align-self: stretch;
-  font-size: var(--desktop-h1-size);
+  font-size: var(--h1-size);
 }
 .content10,
 .content11,
@@ -217,7 +217,7 @@
   position: relative;
 }
 .paragraph19 {
-  font-size: var(--desktop-paragraph-size);
+  font-size: var(--paragraph-size);
   line-height: 1.44rem;
   font-family: var(--font-inherit);
 }
@@ -235,11 +235,11 @@
   flex-direction: column;
   padding: var(--padding-61xl) 0;
   align-items: center;
-  font-size: var(--desktop-h2-size);
+  font-size: var(--h2-size);
 }
 .content18 {
   align-items: flex-start;
-  font-size: var(--desktop-title-size);
+  font-size: var(--title-size);
 }
 .content18,
 .content19 {
@@ -272,7 +272,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: var(--gap-5xl);
-  font-size: var(--desktop-h2-size);
+  font-size: var(--h2-size);
 }
 .sectionDesign,
 .wrapper6 {
@@ -286,12 +286,12 @@
 }
 .sectionDesign {
   padding: var(--padding-61xl) var(--padding-221xl);
-  font-size: var(--desktop-h1-size);
+  font-size: var(--h1-size);
 }
 .paragraph27 {
   align-self: stretch;
   position: relative;
-  font-size: var(--desktop-paragraph-size);
+  font-size: var(--paragraph-size);
   line-height: 1.44rem;
   font-family: var(--font-inherit);
   display: none;
@@ -307,13 +307,13 @@
   align-items: flex-start;
   gap: var(--gap-xs);
   max-width: 29.25rem;
-  font-size: var(--desktop-paragraph-size);
+  font-size: var(--paragraph-size);
 }
 .sectionAfls {
   align-self: stretch;
   padding: var(--padding-61xl) 0;
   align-items: center;
-  font-size: var(--desktop-title-size);
+  font-size: var(--title-size);
 }
 .content26 {
   flex: 1;
@@ -362,7 +362,7 @@
   width: 100%;
   overflow: hidden;
   text-align: left;
-  font-size: var(--desktop-paragraph-size);
+  font-size: var(--paragraph-size);
   color: var(--color-black);
   font-family: var(--desktop-caption);
 }

@@ -8,11 +8,10 @@ type SectionType = {
 };
 
 const Section: FunctionComponent<SectionType> = ({ name, type, children }) => {
-    const sectionClass = `${styles[name]}`;
     const wrapperClass = type === 'fluid' ? styles.fluid : styles.wrapped;
 
     return (
-    <div className={sectionClass}>
+    <div className={styles.section} id={name} data-scroll-to={name}>
         <div className={wrapperClass}>
             {children}
         </div>
