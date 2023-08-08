@@ -23,13 +23,13 @@ const ProjectListItem: FunctionComponent<ProjectListItemType> = ({
     <div className={styles.projectLivestats}>
       <div className={styles.content}>
         <div className={styles.content1}>
-          <div className={styles.heading}>{projectTitle}</div>
-          <div className={styles.paragraph}>{projectSubtitle}</div>
-          <div className={styles.paragraph1}>{paragraph1}</div>
-          <div className={styles.paragraph1}>{paragraph2}</div>
+          <h2>{projectTitle}</h2>
+          <h4>{projectSubtitle}</h4>
+          <p>{paragraph1}</p>
+          <p>{paragraph2}</p>
         </div>
         <Link className={styles.cta} to={to}>
-          <div className={styles.title}>Read more</div>
+          <h4>Read more</h4>
         </Link>
       </div>
       <img className={styles.imgIcon} alt="" src={iMG} />

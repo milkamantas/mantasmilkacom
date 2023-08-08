@@ -6,6 +6,7 @@ import SectionHi from "../components/SectionHi";
 import ProjectListItem from "../components/ProjectListItem";
 import Footer from "../components/Footer";
 import styles from "./Home.module.css";
+import Section from "../components/Section";
 
 const Home: FunctionComponent = () => {
 	const location = useLocation();
@@ -64,8 +65,7 @@ const Home: FunctionComponent = () => {
 				>
 					<div className={styles.wrapper1}>
 						<div className={styles.content}>
-							<div className={styles.heading}>Projects</div>
-							<div className={styles.paragraph1}>MultiSport @Genius Sports</div>
+							<h1>Projects</h1>
 						</div>
 						{/* <ProjectListItem
 							projectTitle="Close-Ups"

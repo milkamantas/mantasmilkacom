@@ -1,23 +1,4 @@
-.heading {
-  font-size: var(--title-size);
-  line-height: 4rem;
-  font-weight: 100;
-}
-.heading,
-.paragraph,
-.paragraph1 {
-  align-self: stretch;
-  position: relative;
-}
-.paragraph {
-  font-size: var(--h2-size);
-  line-height: 1.88rem;
-  font-weight: 100;
-}
-.paragraph1 {
-  line-height: 1.44rem;
-  font-weight: 300;
-}
+
 .content1 {
   align-self: stretch;
   display: flex;
@@ -49,6 +30,7 @@
   flex-direction: row;
   text-decoration: none;
   transition: all 0.420s ease-in-out;
+  color: var(--color-white);
 }
 .cta:hover {
   background-color: #1f1f1f;

@@ -1,14 +1,11 @@
-.mantasMilka {
-  align-self: stretch;
-  position: relative;
-  line-height: 26px;
+.logoWrap h4, .projects h4 {
   font-weight: 500;
 }
-.mantasmantasmilkacom {
+.logoWrap .contactLinks h4, .projects .projectsList h4 {
   position: relative;
   font-weight: 300;
 }
-.mantasmantasmilkacomParent {
+.contactLinks {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -60,18 +57,18 @@
   justify-content: center;
   gap: var(--gap-29xl);
 }
-.closeUpsParent {
+.projectsList {
   flex-direction: column;
   justify-content: flex-start;
   gap: var(--gap-xs);
 }
-.closeUpsParent,
-.nav,
+.projectsList,
+.projects,
 .platformdesktop {
   display: flex;
   align-items: flex-start;
 }
-.nav {
+.projects {
   flex-direction: column;
   justify-content: flex-start;
   gap: var(--gap-29xl);
@@ -106,7 +103,7 @@
     flex-direction: column-reverse;
     gap: var(--gap-29xl);
   }
-  .nav {
+  .projects {
     margin-left: auto;
   }
 }

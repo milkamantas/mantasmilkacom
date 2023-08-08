@@ -14,12 +14,14 @@ const Footer: FunctionComponent = () => {
     <div className={styles.platformdesktop}
     data-scroll-to="platformdesktop">
       <div className={styles.logoWrap}>
-        <div className={styles.mantasMilka}>Mantas Milka</div>
-        <div className={styles.mantasmantasmilkacomParent}>
-          <div className={styles.mantasmantasmilkacom}>
+        <h4>Mantas Milka</h4>
+        <div className={styles.contactLinks}>
+          <h4 className={styles.contactLinkText}>
             mantas@mantasmilka.com
-          </div>
-          <div className={styles.mantasmantasmilkacom}>+370 624 59 890</div>
+          </h4>
+          <h4 className={styles.contactLinkText}>
+            +370 624 59 890
+          </h4>
         </div>
         <div className={styles.social}>
           <div className={styles.cv}>
@@ -34,11 +36,11 @@ const Footer: FunctionComponent = () => {
           />
         </div>
       </div>
-      <div className={styles.nav}>
-        <div className={styles.mantasMilka}>Projects</div>
-        <div className={styles.closeUpsParent}>
-          {/* <div className={styles.mantasmantasmilkacom}>Close-Ups</div> */}
-          <div className={styles.mantasmantasmilkacom}>LiveStats</div>
+      <div className={styles.projects}>
+        <h4>Projects</h4>
+        <div className={styles.projectsList}>
+          {/* <div className={styles.contactLinks}>Close-Ups</div> */}
+          <h4>LiveStats</h4>
         </div>
       </div>
     </div>
