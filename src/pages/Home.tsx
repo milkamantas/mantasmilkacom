@@ -6,6 +6,7 @@ import SectionHi from "../components/SectionHi";
 import ProjectListItem from "../components/ProjectListItem";
 import Footer from "../components/Footer";
 import styles from "./Home.module.css";
+import Section from "../components/Section";
 
 const Home: FunctionComponent = () => {
 	const location = useLocation();
@@ -56,7 +57,7 @@ const Home: FunctionComponent = () => {
 				subTitle="based in Vilnius, Lithuania"
 			/>
 			<main className={styles.main}>
-        <SectionHi />
+        	<SectionHi />
 				<div
 					className={styles.sectionProjects}
 					data-scroll-to="sectionProjects"
@@ -64,17 +65,16 @@ const Home: FunctionComponent = () => {
 				>
 					<div className={styles.wrapper1}>
 						<div className={styles.content}>
-							<div className={styles.heading}>Projects</div>
-							<div className={styles.paragraph1}>MultiSport @Genius Sports</div>
+							<h1>Projects</h1>
 						</div>
 						{/* <ProjectListItem
-              projectTitle="Close-Ups"
-              projectSubtitle="Team MORE @Vinted"
-              paragraph1="Our deep dive into our internal data revealed a concerning trend: our engagement and retention metrics were in jeopardy. With the emergence of new second-hand marketplaces each year, we recognized this as a looming threat to the sustainability and growth of our company. To address this, we conducted preliminary research to understand the strategies employed by our competitors. "
-              paragraph2={`Armed with this knowledge, we resolved to explore and experiment with an innovative approach to content sharing. This led to the inception of the "Close-Ups" feature, aimed at providing a richer and more immersive experience for users. Through this project, our primary objectives were to bolster user engagement, enhance content quality, and ultimately fortify our position in the marketplace.`}
-              iMG="/image-2@2x.png"
-              to="/projectvinted"
-            /> */}
+							projectTitle="Close-Ups"
+							projectSubtitle="Team MORE @Vinted"
+							paragraph1="Our deep dive into our internal data revealed a concerning trend: our engagement and retention metrics were in jeopardy. With the emergence of new second-hand marketplaces each year, we recognized this as a looming threat to the sustainability and growth of our company. To address this, we conducted preliminary research to understand the strategies employed by our competitors. "
+							paragraph2={`Armed with this knowledge, we resolved to explore and experiment with an innovative approach to content sharing. This led to the inception of the "Close-Ups" feature, aimed at providing a richer and more immersive experience for users. Through this project, our primary objectives were to bolster user engagement, enhance content quality, and ultimately fortify our position in the marketplace.`}
+							iMG="/image-2@2x.png"
+							to="/projectvinted"
+						/> */}
 						<ProjectListItem
 							projectTitle="LiveStats"
 							projectSubtitle="MultiSport @Genius Sports"

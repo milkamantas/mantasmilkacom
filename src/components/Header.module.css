@@ -7,6 +7,8 @@
   align-items: flex-start;
   justify-content: center;
   max-width: 7.5rem;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 .header {
   flex-direction: row;
@@ -21,7 +23,7 @@
   box-sizing: border-box;
   justify-content: space-between;
   text-align: left;
-  font-size: var(--desktop-h2-size);
+  font-size: var(--h2-size);
   color: var(--color-gray);
   font-family: var(--desktop-caption);
   position: fixed;

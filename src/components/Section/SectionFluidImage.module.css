@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  font-size: var(--desktop-caption-size);
+  font-size: var(--caption-size);
   color: var(--gray-1);
   font-family: var(--desktop-caption);
 }

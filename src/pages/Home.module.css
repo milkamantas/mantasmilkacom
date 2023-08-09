@@ -4,7 +4,7 @@
   position: relative;
 }
 .hiThere {
-  font-size: var(--desktop-hero-title-size);
+  font-size: var(--hero-title-size);
   line-height: 5.5rem;
   font-weight: 100;
   font-family: inherit;
@@ -62,7 +62,7 @@
   justify-content: flex-start;
   gap: 2rem;
   text-align: center;
-  font-size: var(--desktop-h1-size);
+  font-size: var(--h1-size);
   flex: 1;
   box-sizing: border-box;
   max-width: 50%;
@@ -87,19 +87,6 @@
   align-items: center;
   justify-content: flex-start;
 }
-.heading,
-.paragraph1 {
-  align-self: stretch;
-  position: relative;
-  line-height: 5.5rem;
-  font-weight: 100;
-  flex: 1;
-}
-.paragraph1 {
-  font-size: var(--desktop-h2-size);
-  line-height: 1.88rem;
-  display: none;
-}
 .content,
 .wrapper1 {
   align-self: stretch;
@@ -119,7 +106,7 @@
   align-self: stretch;
   background-color: #f6f6f6;
   padding: var(--padding-109xl) 0;
-  font-size: var(--desktop-hero-title-size);
+  font-size: var(--hero-title-size);
 }
 .home,
 .main,
@@ -132,7 +119,7 @@
 .main {
   align-self: stretch;
   text-align: left;
-  font-size: var(--desktop-paragraph-size);
+  font-size: var(--paragraph-size);
   color: var(--color-black);
   font-family: var(--desktop-caption);
 }

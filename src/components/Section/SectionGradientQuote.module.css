@@ -24,7 +24,7 @@
   box-sizing: border-box;
   align-items: flex-start;
   text-align: left;
-  font-size: var(--desktop-h1-size);
+  font-size: var(--h1-size);
   color: var(--color-white);
   font-family: var(--desktop-caption);
 }
