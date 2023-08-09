@@ -1,14 +1,3 @@
-.heading,
-.paragraph {
-  align-self: stretch;
-  position: relative;
-  line-height: 5.5rem;
-  font-weight: 300;
-}
-.paragraph {
-  font-size: var(--h2-size);
-  line-height: 1.88rem;
-}
 .content {
   align-self: stretch;
   flex: 1;
@@ -16,200 +5,53 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: var(--gap-xs);
-  max-width: 29.25rem;
+  gap: 3rem;
+  max-width: calc(30rem - 1.5rem);
 }
-.heading1,
-.paragraph1 {
-  align-self: stretch;
-  position: relative;
+.content.inside {
+  gap: 0.75rem;
 }
-.heading1 {
-  line-height: 4rem;
-  font-weight: 300;
-  display: none;
+.left {
+  padding-right: 50%;
 }
-.paragraph1 {
-  font-size: var(--paragraph-size);
-  line-height: 1.44rem;
+.right {
+  padding-left: 50%;
 }
-.content1,
-.sectionIntro,
-.wrapper {
+.wrapped {
   display: flex;
-  align-items: flex-start;
-}
-.content1 {
-  align-self: stretch;
-  flex: 1;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: var(--gap-xs);
-  max-width: 29.25rem;
-  font-size: var(--title-size);
-}
-.sectionIntro,
-.wrapper {
+  flex-wrap: wrap;
   flex-direction: row;
+  max-width: 100%;
+  min-width: 100%;
 }
-.wrapper {
+.wrapped .wrappedSection {
   flex: 1;
-  justify-content: flex-start;
-  gap: var(--gap-5xl);
-  max-width: 60rem;
-  width: 100%;
-  margin: 0 auto;
+  max-width: calc(30rem - (1.5rem));
+  min-width: calc(30rem - (1.5rem));
 }
-.sectionIntro {
-  align-self: stretch;
-  padding: var(--padding-61xl) 0;
-  justify-content: space-between;
-  font-size: var(--hero-title-size);
+.wrappedSection ul {
+  margin-top: 0.75rem;
 }
-.heading2,
-.paragraph2 {
-  align-self: stretch;
-  position: relative;
-}
-.heading2 {
-  font-size: var(--title-size);
-  line-height: 4rem;
-  font-weight: 300;
-}
-.paragraph2 {
-  line-height: 1.44rem;
-}
-.content2 {
-  align-items: flex-start;
-  gap: var(--gap-xs);
-  max-width: 29.25rem;
-}
+
+
+
 .content2,
-.sectionProjectOverview,
-.wrapper1 {
+.sectionProjectOverview {
   align-self: stretch;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-.wrapper1 {
-  align-items: flex-start;
-  gap: var(--gap-29xl);
-  max-width: 60rem;
-  width: 100%;
-  margin: 0 auto;
 }
 .sectionProjectOverview {
-  padding: var(--padding-61xl) 0;
+  padding: 1.5rem 0;
   align-items: center;
-}
-.heading3,
-.heading4 {
-  align-self: stretch;
-  position: relative;
-}
-.heading3 {
-  line-height: 4rem;
-  font-weight: 300;
-}
-.heading4 {
-  line-height: 1.75rem;
-}
-.content4,
-.wrapper3 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.content4 {
-  flex: 1;
-  flex-direction: column;
-  gap: var(--gap-xs);
-  min-width: 29.25rem;
-  max-width: 29.25rem;
-}
-.wrapper3 {
-  align-self: stretch;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: var(--gap-5xl);
-  font-size: var(--h2-size);
-}
-.heading8 {
-  align-self: stretch;
-  position: relative;
-  font-size: var(--h1-size);
-  line-height: 2.5rem;
-  font-weight: 300;
-}
-.content8,
-.sectionChallenges {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.content8 {
-  align-items: flex-start;
-  gap: var(--gap-xs);
-  max-width: 29.25rem;
-  font-size: var(--paragraph-size);
-}
-.sectionChallenges {
-  padding: var(--padding-109xl) 0;
-  align-items: center;
-  font-size: var(--title-size);
-}
-.paragraph12 {
-  align-self: stretch;
-  position: relative;
-  font-size: var(--paragraph-size);
-  line-height: 1.44rem;
-  display: none;
-}
-.content9 {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-xs);
-  max-width: 29.25rem;
-  font-size: var(--title-size);
-}
-.heading10 {
-  align-self: stretch;
-  position: relative;
-  line-height: 2.5rem;
-  font-weight: 300;
-}
-.content10 {
-  align-self: stretch;
-  font-size: var(--h1-size);
-}
-.content10,
-.content11,
-.wrapper5 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-xs);
-  max-width: 29.25rem;
-}
-.wrapper5 {
-  align-self: stretch;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: var(--gap-5xl);
-  max-width: 60rem;
 }
 .bettingDepartment {
   margin-bottom: false;
 }
 .bettingDepartmentSportsInfo {
   margin: 0;
-  padding-left: var(--padding-xl);
+  padding-left: 1.5rem;
 }
 .heading17,
 .paragraph19 {
