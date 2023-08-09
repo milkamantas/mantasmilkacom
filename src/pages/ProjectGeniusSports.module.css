@@ -285,10 +285,6 @@
     width: auto;
     box-sizing: border-box;
   }
-  .sectionIntro {
-    /* max-width: 24rem; */
-    /* width: 100%; */
-  }
   .paragraph1, .content2, .content4, .content18, .content20, .content26, .heading8, .paragraph2, .content8, .content1, .paragraph, .content, .content19, .heading10, .content25, .paragraph2, .paragraph19, .content19, .heading10, .paragraph10, .paragraph1 {
     width: auto;
     max-width: none;
