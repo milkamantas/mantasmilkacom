@@ -17,9 +17,7 @@ const ProjectGeniusSports: FunctionComponent = () => {
 	const onAboutMeClick = useCallback(() => {
 		navigate("/");
 	}, [navigate]);
-
-	// onProjectsClick right now naviates to the Home.tsx, but does not scroll to the projects section
-	// Rewrite the code so that it scrolls to the projects section
+  
 	const onProjectsClick = () => {
 		navigate("/", { state: { scrollTo: "sectionProjects" } });
 	};
