@@ -1,11 +1,11 @@
-.navLink {
+/* .navLink {
   text-decoration: none;
   flex: 1;
   position: relative;
   font-weight: 300;
   color: inherit;
   cursor: pointer;
-}
+} */
 .nav {
   margin: 0;
   flex: 1;
@@ -18,6 +18,14 @@
   font-size: var(--h2-size);
   color: var(--color-gray);
   font-family: var(--desktop-caption);
+}
+.nav a {
+  font-size: var(--h4-size);
+  font-weight: 300;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  flex: 1;
 }
 .nav.open {
   display: flex;

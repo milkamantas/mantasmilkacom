@@ -34,7 +34,7 @@
   background-image: url(/public/hero@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: 50%;
   text-align: left;
   font-size: var(--title-size);
   color: var(--color-gray);

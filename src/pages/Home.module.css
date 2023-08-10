@@ -87,19 +87,6 @@
   align-items: center;
   justify-content: flex-start;
 }
-.heading,
-.paragraph1 {
-  align-self: stretch;
-  position: relative;
-  line-height: 5.5rem;
-  font-weight: 100;
-  flex: 1;
-}
-.paragraph1 {
-  font-size: var(--h2-size);
-  line-height: 1.88rem;
-  display: none;
-}
 .content,
 .wrapper1 {
   align-self: stretch;

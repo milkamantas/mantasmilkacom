@@ -21,7 +21,7 @@ const SectionFluidImage: FunctionComponent<SectionFluidImageType> = memo(
     return (
       <div className={styles.sectionFluidImage} style={sectionFluidImageStyle}>
         <img className={styles.imgIcon} alt="" src={iMG} />
-        <i className={styles.caption}>{caption}</i>
+        <figcaption className={styles.caption}>{caption}</figcaption>
       </div>
     );
   }

@@ -1,11 +1,15 @@
-.logoWrap h4, .projects h4 {
+.mantasMilka {
+  align-self: stretch;
+  position: relative;
+  line-height: 26px;
   font-weight: 500;
 }
-.logoWrap .contactLinks h4, .projects .projectsList h4 {
+.mantasmantasmilkacom {
   position: relative;
   font-weight: 300;
 }
-.contactLinks {
+
+.mantasmantasmilkacomParent {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -21,7 +25,6 @@
   background-color: var(--color-black);
   height: 24px;
 }
-
 .cv,
 .cv1,
 .cvChild {
@@ -48,7 +51,7 @@
   justify-content: flex-start;
   gap: var(--gap-5xl);
   text-align: center;
-  font-size: var(--caption-size);
+  font-size: var(--desktop-caption-size);
   color: var(--color-white);
 }
 .logoWrap {
@@ -58,18 +61,18 @@
   justify-content: center;
   gap: var(--gap-29xl);
 }
-.projectsList {
+.closeUpsParent {
   flex-direction: column;
   justify-content: flex-start;
   gap: var(--gap-xs);
 }
-.projectsList,
-.projects,
+.closeUpsParent,
+.nav,
 .platformdesktop {
   display: flex;
   align-items: flex-start;
 }
-.projects {
+.nav {
   flex-direction: column;
   justify-content: flex-start;
   gap: var(--gap-29xl);
@@ -86,25 +89,7 @@
   box-sizing: border-box;
   justify-content: space-between;
   text-align: left;
-  font-size: var(--h2-size);
+  font-size: var(--desktop-h2-size);
   color: var(--color-gray);
   font-family: var(--desktop-caption);
-}
-@media screen and (max-width: 960px) {
-  .platformdesktop {
-    max-width: 37.25rem;
-  }
-}
-@media screen and (max-width: 420px) {
-  .platformdesktop {
-    max-width: 24rem;
-    padding-left: var(--padding-5xl);
-    padding-right: var(--padding-5xl);
-    box-sizing: border-box;
-    flex-direction: column-reverse;
-    gap: var(--gap-29xl);
-  }
-  .projects {
-    margin-left: auto;
-  }
 }
