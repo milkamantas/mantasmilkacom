@@ -5,6 +5,10 @@
   position: relative;
   font-weight: 300;
 }
+.logoWrap ul {
+  margin-block-start: 0;
+  padding-inline-start: 0;
+}
 .contactLinks {
   display: flex;
   flex-direction: column;
