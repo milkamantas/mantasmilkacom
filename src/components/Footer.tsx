@@ -1,4 +1,5 @@
 import { FunctionComponent, useCallback } from "react";
+import SocialNav from "./SocialNav";
 import styles from "./Footer.module.css";
 
 const Footer: FunctionComponent = () => {
@@ -23,18 +24,7 @@ const Footer: FunctionComponent = () => {
             +370 624 59 890
           </h4>
         </div>
-        <div className={styles.social}>
-          <div className={styles.cv}>
-            <div className={styles.cvChild} />
-            <div className={styles.cv1}>CV</div>
-          </div>
-          <img className={styles.cv} alt="" src="/-icon-rounded-linkedin.svg" />
-          <img
-            className={styles.cv}
-            alt=""
-            src="/-icon-rounded-instagram.svg"
-          />
-        </div>
+        <SocialNav />
       </div>
       <div className={styles.projects}>
         <h4>Projects</h4>
