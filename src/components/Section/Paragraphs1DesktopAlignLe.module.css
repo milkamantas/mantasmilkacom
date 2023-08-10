@@ -5,7 +5,7 @@
   line-height: 28px;
 }
 .paragraph {
-  font-size: var(--desktop-paragraph-size);
+  font-size: var(--paragraph-size);
   line-height: 23px;
 }
 .paragraphs1DesktopAlignle {
@@ -18,7 +18,7 @@
   gap: var(--gap-xs);
   max-width: 468px;
   text-align: left;
-  font-size: var(--desktop-h2-size);
+  font-size: var(--h2-size);
   color: var(--color-black);
   font-family: var(--desktop-caption);
 }

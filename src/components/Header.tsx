@@ -21,7 +21,11 @@ const Header: FunctionComponent<HeaderType> = ({
       <div className={styles.logoWrap}>
         <div className={styles.mantasMilka}>Mantas Milka</div>
       </div>
-      <Nav />
+      <Nav
+        onAboutMeClick={onAboutMeClick}
+        onProjectsClick={onProjectsClick}
+        onContactMeClick={onContactMeClick}
+      />
       <SocialNav />
       <MobileMenu
         onAboutMeClick={onAboutMeClick}

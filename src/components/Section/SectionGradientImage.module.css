@@ -34,7 +34,7 @@
   box-sizing: border-box;
   justify-content: space-between;
   text-align: center;
-  font-size: var(--desktop-caption-size);
+  font-size: var(--caption-size);
   color: var(--color-white);
   font-family: var(--desktop-caption);
   width: 100%;

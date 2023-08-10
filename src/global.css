@@ -23,6 +23,59 @@
   src: url("/public/HelveticaNeue-Bold-02.ttf");
   font-weight: 700;
 }
+h1, h2, h3, h4, h5, p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+h1 {
+  font-size: var(--h1-size);
+  line-height: calc(var(--h1-size) * 1.2);
+  font-weight: 100;
+}
+h2 {
+  font-size: var(--h2-size);
+  line-height: calc(var(--h2-size) * 1.2);
+  font-weight: 300;
+}
+h3 {
+  font-size: var(--h3-size);
+  line-height: calc(var(--h3-size) * 1.25);
+  font-weight: 300;
+}
+h4 {
+  font-size: var(--h4-size);
+  line-height: calc(var(--h4-size) * 1.5);
+  font-weight: 100;
+}
+h5 {
+  font-size: var(--h5-size);
+  line-height: calc(var(--h5-size) * 1.25);
+  font-weight: 300;
+}
+p {
+  font-size: var(--paragraph-size);
+  line-height: calc(var(--paragraph-size) * 1.5);
+  font-weight: 400;
+  margin-top: 0.75rem;
+}
+h2 + p {
+  margin-top: 0.5rem;
+}
+main ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0.75rem;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 2rem;
+  margin-top: 0;
+}
+main ul li {
+  margin-bottom: 0.25rem;
+}
 
 body {
   margin: 0;
@@ -34,12 +87,15 @@ body {
   --font-inherit: inherit;
 
   /* font sizes */
-  --desktop-h2-size: 1.25rem;
-  --desktop-caption-size: 0.75rem;
-  --desktop-paragraph-size: 0.94rem;
-  --desktop-title-size: 3rem;
-  --desktop-hero-title-size: 5rem;
-  --desktop-h1-size: 2rem;
+  --h1-size: 5rem;
+  --h2-size: 3rem;
+  --h3-size: 2rem;
+  --h4-size: 1.25rem;
+  --h5-size: 1rem;
+  --caption-size: 0.75rem;
+  --paragraph-size: 1.0rem;
+  --title-size: 3rem;
+  --hero-title-size: 5rem;
   --font-size-41xl: 3.75rem;
   --font-size-21xl: 2.5rem;
 
