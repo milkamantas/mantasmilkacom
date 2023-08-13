@@ -23,7 +23,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  gap: var(--gap-5xl);
+  gap: var(--gap-lg);
   max-width: 7.5rem;
   list-style-type: none;
 }

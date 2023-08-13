@@ -19,12 +19,12 @@
   background-color: var(--color-white);
   height: 5.5rem;
   display: flex;
-  padding: var(--padding-13xl) var(--padding-29xl);
+  padding: var(--padding-lg) var(--padding-md);
   box-sizing: border-box;
   justify-content: space-between;
   text-align: left;
   font-size: var(--h2-size);
-  color: var(--color-gray);
+  color: var(--color-black);
   font-family: var(--desktop-caption);
   position: fixed;
   top: 0;
@@ -70,7 +70,7 @@
     gap: var(--gap-0);
     align-items: center;
     justify-content: space-between;
-    padding: var(--padding-base) var(--padding-5xl);
+    padding: var(--padding-sm) var(--padding-md);
     box-sizing: border-box;
   }
 }

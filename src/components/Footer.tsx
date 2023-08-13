@@ -1,6 +1,7 @@
 import { FunctionComponent, useCallback } from "react";
 import SocialNav from "./SocialNav";
 import styles from "./Footer.module.css";
+import Section from "./Section";
 
 const Footer: FunctionComponent = () => {
 
@@ -12,8 +13,7 @@ const Footer: FunctionComponent = () => {
   }, []);
 
   return (
-    <div className={styles.platformdesktop}
-    data-scroll-to="platformdesktop">
+    <Section name="Footer" type="wrapper" flexDirection="row">
       <div className={styles.logoWrap}>
         <h4>Mantas Milka</h4>
         <div className={styles.contactLinks}>
@@ -33,7 +33,7 @@ const Footer: FunctionComponent = () => {
           <h4>LiveStats</h4>
         </div>
       </div>
-    </div>
+    </Section>
   );
 };
 

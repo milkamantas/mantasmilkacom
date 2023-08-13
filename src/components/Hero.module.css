@@ -1,63 +1,5 @@
-.heyImMantas,
-.uxUiDesigner {
-  margin: 0;
-  align-self: stretch;
-  position: relative;
-  font-weight: 100;
-  font-family: inherit;
-}
-.heyImMantas {
-  font-size: inherit;
-  line-height: 4rem;
-}
-.uxUiDesigner {
-  font-size: var(--hero-title-size);
-  line-height: 5.5rem;
-}
-.hero,
-.wrapper {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-}
-.wrapper {
-  align-items: flex-start;
-  justify-content: flex-start;
-  max-width: 60rem;
-  width: 100%;
-  margin: 0 auto;
-}
-.hero {
-  padding: var(--padding-109xl) 0;
-  align-items: center;
-  justify-content: center;
-  background-image: url(/public/hero@3x.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  text-align: left;
-  font-size: var(--title-size);
-  color: var(--color-gray);
-  font-family: var(--desktop-caption);
-  margin-top: 88px;
-}
 @media screen and (max-width: 1200px) {
-  .hero,
-  .wrapper {
-    box-sizing: border-box;
-  }
-  .wrapper {
-    padding-left: 0;
-    padding-top: 0;
-    padding-right: 0;
-  }
-  .hero {
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 0;
-    padding-top: var(--padding-109xl);
-    padding-right: 0;
-  }
+
 }
 @media screen and (max-width: 960px) {
   .wrapper {
@@ -68,32 +10,17 @@
     justify-content: flex-start;
     max-width: 37.25rem;
   }
-  .hero {
-    padding-left: 0;
-    padding-top: var(--padding-109xl);
-    padding-right: 0;
-    box-sizing: border-box;
-    background-position: 62% 100%;
-  }
 }
 @media screen and (max-width: 420px) {
-  .heyImMantas {
-    font-size: var(--font-size-21xl);
-    line-height: 3rem;
-  }
-  .uxUiDesigner {
-    font-size: var(--font-size-41xl);
-    line-height: 4.5rem;
-  }
   .wrapper {
-    padding-left: var(--padding-5xl);
-    padding-right: var(--padding-5xl);
+    padding-left: var(--padding-md);
+    padding-right: var(--padding-md);
     box-sizing: border-box;
     max-width: 24rem;
     width: 100%;
     margin: 0 auto;
   }
-  .hero {
-    background-position: 62% 100%;
+  h1, h2 {
+    margin-top: var(--size-xs);
   }
 }

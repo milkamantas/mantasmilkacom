@@ -14,7 +14,7 @@
 .sectionGradient {
   background: linear-gradient(-77.68deg, #011327, #05264b);
   width: 100%;
-  padding: var(--padding-101xl) 0;
+  padding: var(--padding-4xl) 0;
   box-sizing: border-box;
   align-items: flex-start;
   text-align: left;
@@ -34,8 +34,15 @@ h3 {
   .wrapper {
 
     margin: 0 auto;
-    padding-left: var(--padding-5xl);
-    padding-right: var(--padding-5xl);
+    padding-left: var(--padding-md);
+    padding-right: var(--padding-md);
     width: auto;
+  }
+  .sectionGradient {
+    padding: var(--padding-2xl) 0;
+  }
+  .wrapper h3 {
+    font-weight: 100;
+    line-height: calc(var(--h3-size) * 1.5);
   }
 }

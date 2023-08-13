@@ -1,5 +1,6 @@
 import { FunctionComponent, memo, useMemo } from "react";
 import CSS, { Property } from "csstype";
+import Section from "./Section";
 import styles from "./Hero.module.css";
 
 type HeroType = {
@@ -30,17 +31,17 @@ const Hero: FunctionComponent<HeroType> = memo(
     }, [heroColor, heroBackgroundImage]);
 
     return (
-      <div className={styles.hero} style={heroStyle}>
-        <div className={styles.wrapper}>
+      <Section name="Hero" flexDirection="column" type="wrapper" bgImg={heroBackgroundImage}>
+        <div className={styles.content} style={heroStyle}>
           {showTopSubtitle && (
-            <h2 className={styles.heyImMantas}>{topSubtitle}</h2>
+            <h2>{topSubtitle}</h2>
           )}
-          <h1 className={styles.uxUiDesigner} id="HeroTitle">
+          <h1>
             {title}
           </h1>
-          <h2 className={styles.heyImMantas}>{subTitle}</h2>
+          <h2>{subTitle}</h2>
         </div>
-      </div>
+      </Section>
     );
   }
 );

@@ -23,7 +23,7 @@
 }
 .logo {
   display: none;
-  padding: var(--padding-base) var(--padding-5xl);
+  padding: var(--padding-sm) var(--padding-md);
   align-items: flex-start;
   justify-content: flex-start;
 }
@@ -32,12 +32,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--gap-3xs);
+  gap: var(--gap-xs);
 }
 .frameChild,
 .frameItem {
   position: relative;
-  background-color: var(--color-gray);
+  background-color: var(--color-black);
   width: 24px;
   height: 2px;
 }
@@ -51,15 +51,15 @@
 }
 .rectangleParent {
   flex-direction: column;
-  padding: var(--padding-4xs) var(--padding-9xs);
+  padding: var(--padding-xs) var(--padding-xxs);
   justify-content: center;
-  gap: var(--gap-5xs);
+  gap: var(--gap-xs);
 }
 .header {
   background-color: var(--color-white);
   width: 375px;
   flex-direction: row;
-  padding: var(--padding-base) var(--padding-5xl);
+  padding: var(--padding-sm) var(--padding-md);
   box-sizing: border-box;
   justify-content: space-between;
 }
@@ -72,7 +72,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: var(--br-5xs);
+  border-radius: var(--size-xs);
   background-color: var(--color-black);
 }
 .cv,
@@ -97,7 +97,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: var(--gap-29xl);
+  gap: var(--gap-2xl);
   font-size: 24px;
   color: var(--color-white);
 }
@@ -108,7 +108,7 @@
 .mantasmantasmilkacomParent {
   align-items: center;
   justify-content: center;
-  gap: var(--gap-21xl);
+  gap: var(--gap-2xl);
   text-align: left;
   font-size: var(--h2-size);
 }
@@ -126,7 +126,7 @@
   width: 375px;
   align-items: center;
   justify-content: center;
-  gap: var(--gap-21xl);
+  gap: var(--gap-2xl);
   text-align: center;
   font-size: var(--h1-size);
   color: var(--color-black);
@@ -150,7 +150,7 @@
   max-height: 90%;
   text-align: left;
   font-size: var(--h2-size);
-  color: var(--color-gray);
+  color: var(--color-black);
   font-family: var(--desktop-caption);
 }
 .mobile.animate {

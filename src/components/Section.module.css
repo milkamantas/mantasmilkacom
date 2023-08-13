@@ -2,21 +2,30 @@
 .wrapper {
   align-self: stretch;
   display: flex;
+  box-sizing: border-box;
 }
 .section {
   flex-direction: column;
-  padding: var(--padding-109xl) 0;
+  padding: var(--padding-4xl) 0;
   align-items: center;
   justify-content: flex-start;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 66%;
+  background-position-y: 40%;
+  font-family: var(--desktop-caption);
 }
 .wrapper {
   align-items: flex-start;
   justify-content: flex-start;
-  gap: var(--gap-29xl);
+  gap: var(--gap-2xl);
   max-width: 60rem;
   width: 100%;
   margin: 0 auto;
   flex: 1;
+  padding: 0 var(--padding-sm);
+  box-sizing: border-box;
+  font-family: --var(--desktop-caption);
 }
 
 .row {
@@ -31,6 +40,52 @@
   /* Your styles for fluid sections */
 }
 
-.wrapped {
-  /* Your styles for wrapped sections */
+@media screen and (max-width: 1200px) {
+  .content {
+    flex-direction: column;
+  }
+  .wrapper {
+    max-width: 50rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .section {
+    padding: var(--padding-3xl) 0;
+  }
+  .wrapper {
+    max-width: 40rem;
+    padding: 0;
+    flex-direction: column;
+    gap: var(--gap-lg);
+  }
+  .content {
+    flex-direction: column;
+    gap: var(--gap-sm);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .wrapper {
+    max-width: 26rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .section {
+    padding: var(--padding-2xl) 0;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .wrapper {
+    max-width: 20rem;
+    padding: 0;
+    flex-direction: column;
+    gap: var(--gap-xs);
+  }
+}
+@media screen and (max-width: 320px) {
+  .wrapper {
+    max-width: 18rem;
+  }
 }

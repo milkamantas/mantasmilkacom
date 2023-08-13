@@ -21,7 +21,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: var(--br-5xs);
+  border-radius: var(--size-xs);
   background-color: var(--color-black);
   height: 24px;
 }
@@ -50,7 +50,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: var(--gap-5xl);
+  gap: var(--gap-lg);
   text-align: center;
   font-size: var(--caption-size);
   color: var(--color-white);
@@ -60,7 +60,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: var(--gap-29xl);
+  gap: var(--gap-2xl);
 }
 .projectsList {
   flex-direction: column;
@@ -68,47 +68,23 @@
   gap: var(--gap-xs);
 }
 .projectsList,
-.projects,
-.platformdesktop {
+.projects {
   display: flex;
   align-items: flex-start;
+  margin-left: auto;
 }
 .projects {
   flex-direction: column;
   justify-content: flex-start;
-  gap: var(--gap-29xl);
-}
-.platformdesktop {
-  position: relative;
-  background-color: var(--color-white);
-  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); */
-  width: 100%;
-  max-width: 60rem;
-  margin: 0 auto;
-  flex-direction: row;
-  padding: var(--padding-109xl) 0;
-  box-sizing: border-box;
-  justify-content: space-between;
-  text-align: left;
-  font-size: var(--h2-size);
-  color: var(--color-gray);
-  font-family: var(--desktop-caption);
+  gap: var(--gap-2xl);
 }
 @media screen and (max-width: 960px) {
-  .platformdesktop {
-    max-width: 37.25rem;
-  }
 }
 @media screen and (max-width: 420px) {
-  .platformdesktop {
-    max-width: 24rem;
-    padding-left: var(--padding-5xl);
-    padding-right: var(--padding-5xl);
-    box-sizing: border-box;
-    flex-direction: column-reverse;
-    gap: var(--gap-29xl);
-  }
   .projects {
     margin-left: auto;
+  }
+  .logoWrap, .projects {
+    gap: var(--gap-sm);
   }
 }
