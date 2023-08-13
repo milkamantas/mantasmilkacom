@@ -4,7 +4,7 @@
   position: relative;
 }
 .hiThere {
-  font-size: var(--hero-title-size);
+  font-size: var(--h1-size);
   line-height: 5.5rem;
   font-weight: 100;
   font-family: inherit;
@@ -76,14 +76,14 @@
   flex-direction: row;
   align-items: flex-end;
   justify-content: center;
-  gap: var(--gap-5xl);
+  gap: var(--gap-lg);
   max-width: 60rem;
   width: 100%;
   margin: 0 auto;
 }
 .sectionHi {
   flex-direction: column;
-  padding: var(--padding-109xl) 0;
+  padding: var(--padding-4xl) 0;
   align-items: center;
   justify-content: flex-start;
 }
@@ -97,7 +97,7 @@
   gap: var(--gap-xs);
 }
 .wrapper1 {
-  gap: var(--gap-29xl);
+  gap: var(--gap-2xl);
   max-width: 60rem;
   width: 100%;
   margin: 0 auto;
@@ -105,8 +105,8 @@
 .sectionProjects {
   align-self: stretch;
   background-color: #f6f6f6;
-  padding: var(--padding-109xl) 0;
-  font-size: var(--hero-title-size);
+  padding: var(--padding-4xl) 0;
+  font-size: var(--h1-size);
 }
 .home,
 .main,
@@ -136,7 +136,7 @@
   }
   .wrapper {
     flex-direction: column;
-    gap: var(--gap-5xl);
+    gap: var(--gap-lg);
     align-items: flex-end;
     justify-content: flex-start;
     max-width: 60rem;
@@ -145,7 +145,7 @@
   }
   .companies {
     max-width: 100%;
-    gap: var(--gap-5xl);
+    gap: var(--gap-lg);
   }
 }
 @media screen and (max-width: 960px) {
@@ -157,7 +157,7 @@
     align-items: center;
     justify-content: center;
     padding-left: 0;
-    padding-top: var(--padding-base);
+    padding-top: var(--padding-sm);
     padding-right: 0;
     width: 100%;
     max-width: 100%;
@@ -169,7 +169,7 @@
   }
   .wrapper {
     flex-direction: column;
-    gap: var(--gap-29xl);
+    gap: var(--gap-2xl);
     align-items: center;
     justify-content: flex-start;
     padding-left: 0;
@@ -178,16 +178,7 @@
     max-width: 37.25rem;
   }
   .sectionHi {
-    padding: var(--padding-45xl) 0;
-  }
-  .sectionProjects,
-  .wrapper1 {
-    padding: 0 var(--padding-55xl);
-    box-sizing: border-box;
-  }
-  .sectionProjects {
-    gap: var(--gap-29xl);
-    padding: var(--padding-45xl) 0;
+    padding: var(--padding-2xl) 0;
   }
   .main {
     gap: var(--gap-0);
@@ -198,45 +189,8 @@
   }
 }
 @media screen and (max-width: 420px) {
-  .hiThere {
-    font-size: var(--font-size-41xl);
-    line-height: 4.13rem;
-  }
-  .paragraph {
-    flex: unset;
-    align-self: stretch;
-  }
-  .companies1 {
-    text-align: center;
-  }
-  .companies {
-    gap: var(--gap-5xl);
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 0;
-    box-sizing: border-box;
-  }
-  .sectionHi,
-  .wrapper {
-    gap: var(--gap-29xl);
-    box-sizing: border-box;
-  }
-  .wrapper {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0 var(--padding-base) 0;
-    max-width: 24.75rem;
-  }
   .sectionHi {
     padding-left: 0;
-  }
-  .wrapper1 {
-    padding: 0 var(--padding-5xl);
-    box-sizing: border-box;
-  }
-  .sectionProjects {
-    gap: var(--gap-29xl);
   }
   .main {
     gap: var(--gap-0);

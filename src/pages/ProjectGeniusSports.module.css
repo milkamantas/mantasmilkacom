@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 3rem;
   max-width: calc(30rem - 1.5rem);
 }
@@ -25,168 +25,13 @@
   min-width: 100%;
 }
 .wrapped .wrappedSection {
-  flex: 1;
-  max-width: calc(30rem - (1.5rem));
-  min-width: calc(30rem - (1.5rem));
+  flex: 1 0 40%;
+  max-width: calc(30rem - (3rem));
 }
 .wrappedSection ul {
   margin-top: 0.75rem;
 }
 
-
-
-.content2,
-.sectionProjectOverview {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.sectionProjectOverview {
-  padding: 1.5rem 0;
-  align-items: center;
-}
-.bettingDepartment {
-  margin-bottom: false;
-}
-.bettingDepartmentSportsInfo {
-  margin: 0;
-  padding-left: 1.5rem;
-}
-.heading17,
-.paragraph19 {
-  align-self: stretch;
-  position: relative;
-}
-.paragraph19 {
-  font-size: var(--paragraph-size);
-  line-height: 1.44rem;
-  font-family: var(--font-inherit);
-}
-.heading17 {
-  line-height: 1.75rem;
-  display: none;
-}
-.content18,
-.sectionTheProcess {
-  display: flex;
-  justify-content: flex-start;
-}
-.sectionTheProcess {
-  align-self: stretch;
-  flex-direction: column;
-  padding: var(--padding-61xl) 0;
-  align-items: center;
-  font-size: var(--h2-size);
-}
-.content18 {
-  align-items: flex-start;
-  font-size: var(--title-size);
-}
-.content18,
-.content19 {
-  width: 29.25rem;
-  flex-direction: column;
-  gap: var(--gap-xs);
-  max-width: 29.25rem;
-}
-.content19,
-.content20,
-.sectionDesign,
-.wrapper6,
-.wrapper7 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.content20 {
-  flex: 1;
-  flex-direction: column;
-  gap: var(--gap-xs);
-  max-width: 29.25rem;
-}
-.sectionDesign,
-.wrapper6,
-.wrapper7 {
-  align-self: stretch;
-}
-.wrapper7 {
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: var(--gap-5xl);
-  font-size: var(--h2-size);
-}
-.sectionDesign,
-.wrapper6 {
-  flex-direction: column;
-}
-.wrapper6 {
-  gap: 4rem;
-  max-width: 60rem;
-  width: 100%;
-  margin: 0 auto;
-}
-.sectionDesign {
-  padding: var(--padding-61xl) var(--padding-221xl);
-  font-size: var(--h1-size);
-}
-.paragraph27 {
-  align-self: stretch;
-  position: relative;
-  font-size: var(--paragraph-size);
-  line-height: 1.44rem;
-  font-family: var(--font-inherit);
-  display: none;
-}
-.content25,
-.sectionAfls {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.content25 {
-  width: 29.25rem;
-  align-items: flex-start;
-  gap: var(--gap-xs);
-  max-width: 29.25rem;
-  font-size: var(--paragraph-size);
-}
-.sectionAfls {
-  align-self: stretch;
-  padding: var(--padding-61xl) 0;
-  align-items: center;
-  font-size: var(--title-size);
-}
-.content26 {
-  flex: 1;
-  flex-direction: column;
-  gap: var(--gap-xs);
-  max-width: 29.25rem;
-}
-.content26,
-.wrapper10,
-.wrapper9 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.wrapper9 {
-  align-self: stretch;
-  flex-direction: row;
-  max-width: 60rem;
-  width: 100%;
-  margin: 0 auto;
-}
-.wrapper10 {
-  width: 60rem;
-  flex-direction: column;
-}
-.wrapper11 {
-  align-self: stretch;
-  max-width: 60rem;
-  width: 100%;
-  margin: 0 auto;
-}
 .main,
 .projectGeniussports,
 .wrapper11 {
@@ -208,86 +53,31 @@
   color: var(--color-black);
   font-family: var(--desktop-caption);
 }
+.main .gsIntro .wrapper {
+  flex-direction: column;
+}
 @media screen and (max-width: 960px) {
-  .content,
-  .content1 {
-    flex: unset;
-    align-self: stretch;
-  }
-  .wrapper {
+
+  .main .gsIntro .wrapper {
     flex-direction: column;
-    gap: var(--gap-5xl);
-    align-items: flex-start;
-    justify-content: flex-start;
-    max-width: 37.25rem;
-    width: 100%;
-  }
-  .wrapper1, .wrapper9, .wrapper10, .wrapper11 {
-    max-width: 37.25rem;
-    width: 100%;
-  }
-  .sectionDesign {
-    padding-left: 0;
-    padding-top: var(--padding-61xl);
-    padding-right: 0;
-    max-width: 37.25rem;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .content4 {
-    flex: unset;
-    align-self: stretch;
-  }
-  .wrapper3,
-  .wrapper5 {
-    flex-direction: column;
-    gap: var(--gap-5xl);
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-  .content20 {
-    flex: unset;
-    align-self: stretch;
-  }
-  .wrapper7 {
-    flex-direction: column;
-    gap: var(--gap-5xl);
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-  .paragraph1, .content2, .content4, .content20, .content26, .heading8, .paragraph2, .content8, .content1, .paragraph, .content, .content19, .heading10, .content25, .paragraph2, .paragraph19, .content19, .heading10, .paragraph10, .paragraph1 {
-    width: 100%;
-    max-width: none;
   }
 }
 @media screen and (max-width: 420px) {
-  .content20 {
-    flex: unset;
-    align-self: stretch;
+  .left {
+    padding-right: 0;
   }
-  .wrapper7 {
-    flex-direction: column;
-    gap: var(--gap-5xl);
-    align-items: flex-start;
-    justify-content: flex-start;
+  .right {
+    padding-left: 0;
   }
-  .wrapper1 {
-    max-width: 24rem;
-    width: 100%;
-    padding-left: var(--padding-5xl);
-    padding-right: var(--padding-5xl);
-    box-sizing: border-box;
+  .wrapped .wrappedSection {
+    flex: 1 0 100%;
+    max-width: 100%;
+    margin-top: var(--size-md);
   }
-  .wrapper9, .wrapper10, .wrapper11, .sectionIntro, .wrapper6 {
-    margin: 0 auto;
-    padding-left: var(--padding-5xl);
-    padding-right: var(--padding-5xl);
-    width: auto;
-    box-sizing: border-box;
+  .content {
+    gap: var(--size-md);
   }
-  .paragraph1, .content2, .content4, .content18, .content20, .content26, .heading8, .paragraph2, .content8, .content1, .paragraph, .content, .content19, .heading10, .content25, .paragraph2, .paragraph19, .content19, .heading10, .paragraph10, .paragraph1 {
-    width: auto;
-    max-width: none;
-    min-width: unset;
+  .content.inside {
+    margin-top: var(--size-md);
   }
 }

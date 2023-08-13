@@ -22,7 +22,7 @@ const ProjectListItem: FunctionComponent<ProjectListItemType> = ({
   return (
     <div className={styles.projectLivestats}>
       <div className={styles.content}>
-        <div className={styles.content1}>
+        <div className={`${styles.content} ${styles.inside}`}>
           <h2>{projectTitle}</h2>
           <h4>{projectSubtitle}</h4>
           <p>{paragraph1}</p>

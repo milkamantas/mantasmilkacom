@@ -10,7 +10,7 @@ const SectionGradientImage: FunctionComponent = () => {
           src="/fls-concept-1@2x.png"
         />
         <i className={styles.prototypePrepapredFor}>
-          Prototype prepapred for Football LiveStats Usability Testing
+          Prototype prepared for Football LiveStats Usability Testing
         </i>
       </div>
     </div>

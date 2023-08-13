@@ -19,18 +19,18 @@ const ProjectGeniusSports: FunctionComponent = () => {
 	}, [navigate]);
   
 	const onProjectsClick = () => {
-		navigate("/", { state: { scrollTo: "sectionProjects" } });
+		navigate("/", { state: { scrollTo: "Projects" } });
 	};
 
 	const onContactMeClick = useCallback(() => {
-		const anchor = document.querySelector("[data-scroll-to='platformdesktop']");
+		const anchor = document.querySelector("[data-scroll-to='Footer']");
 		if (anchor) {
 			anchor.scrollIntoView({ block: "start", behavior: "smooth" });
 		}
 	}, []);
 
 	return (
-		<div className={styles.projectGeniussports}>
+		<main className={styles.projectGeniussports}>
 			<Header
 				onAboutMeClick={onAboutMeClick}
 				onProjectsClick={onProjectsClick}
@@ -42,9 +42,9 @@ const ProjectGeniusSports: FunctionComponent = () => {
 				title="LiveStats"
 				subTitle="Genius Sports"
 				heroColor="#ffffff"
-				heroBackgroundImage={`url("/hero2@3x.png")`}
+				heroBackgroundImage="/hero2@3x.png"
 			/>
-			<main className={styles.main}>
+			<div className={styles.main}>
 				<Section name="gsIntro" type="wrapper" flexDirection="row">
 					<div className={styles.content}>
 						<h1>LiveStats</h1>
@@ -173,9 +173,8 @@ const ProjectGeniusSports: FunctionComponent = () => {
 								statisticians.
 							</p>
 						</div>
-					</div>
-					<div>
-						<h4>My Role</h4>
+						<div>
+						<h4 className={styles.wrappedSection}>My Role</h4>
 						<p className={styles.left}>
 							Addressing these challenges required a deep dive into the
 							intricacies of each sport, coupled with a user-centric approach to
@@ -189,6 +188,7 @@ const ProjectGeniusSports: FunctionComponent = () => {
 							accessibility. I also collaborated with various stakeholders to
 							ensure the applications met user and business requirements.
 						</p>
+					</div>
 					</div>
 				</Section>
 				<SectionFluidImageTwice
@@ -259,22 +259,19 @@ const ProjectGeniusSports: FunctionComponent = () => {
 								insights into the real-world dynamics of the sports.
 							</p>
 						</div>
-					</div>
-					<div className={styles.wrappedSection}>
-						<h4>Stakeholders Involved</h4>
-						<ul>
-							<li>Betting department</li>
-							<li>Sports Information Directors (SIDs)</li>
-							<li>Internal business stakeholders</li>
-						</ul>
-					</div>
-					<div className={styles.wrappedSection}>
-						<h4>Stakeholders Involved</h4>
-						<p>
-							Through this structured and collaborative approach, we were able
-							to develop LiveStats with a deep understanding of the sports and
-							the needs of the users and stakeholders involved.
-						</p>
+						<div className={styles.wrappedSection}>
+							<h4>Stakeholders Involved</h4>
+							<ul>
+								<li>Betting department</li>
+								<li>Sports Information Directors (SIDs)</li>
+								<li>Internal business stakeholders</li>
+							</ul>
+							<p>
+								Through this structured and collaborative approach, we were able
+								to develop LiveStats with a deep understanding of the sports and
+								the needs of the users and stakeholders involved.
+							</p>
+						</div>
 					</div>
 				</Section>
 				<SectionFluidImage
@@ -282,72 +279,74 @@ const ProjectGeniusSports: FunctionComponent = () => {
 					caption="IceHockey LiveStats workshop in progress"
 				/>
 				<Section name="gsDesign" type="wrapper" flexDirection="column">
-					<div className={`${styles.content} ${styles.inside}`}>
-						<h2>Design</h2>
-						<p>
-							Each sport has its own set of rules, actions, court sizes, and
-							team roster sizes, which necessitated different approaches to user
-							flows and components. For instance, while a live clock was not
-							critical for American Football LiveStats, it was indispensable for
-							Basketball due to the nature of the game. Similarly, tracking the
-							puck was not required for Ice Hockey, but it was crucial for
-							Basketball.
-						</p>
-					</div>
-					<div className={`${styles.content} ${styles.inside}`}>
-						<h3>Design Approach</h3>
-						<p>
-							The LiveStats applications required a unique design approach. For
-							AFLS, one of the challenges was creating new patterns for entering
-							and selecting player numbers. For IHLS, tracking the number of
-							players on the pitch was a unique challenge. Usability was
-							prioritized over aesthetics. Feedback from SIDs was incorporated
-							to ensure the applications were user-friendly.
-						</p>
-					</div>
-					<div className={`${styles.content} ${styles.wrapped}`}>
-						<div className={styles.wrappedSection}>
-							<h4>Concept Development and Team Collaboration</h4>
+					<div className={styles.content}>
+						<div className={`${styles.content} ${styles.inside}`}>
+							<h2>Design</h2>
 							<p>
-								With our concepts of game flows in place, we facilitated another
-								workshop within our development team. This workshop allowed team
-								members to raise questions, voice concerns, and share ideas,
-								fostering a collaborative environment.
+								Each sport has its own set of rules, actions, court sizes, and
+								team roster sizes, which necessitated different approaches to user
+								flows and components. For instance, while a live clock was not
+								critical for American Football LiveStats, it was indispensable for
+								Basketball due to the nature of the game. Similarly, tracking the
+								puck was not required for Ice Hockey, but it was crucial for
+								Basketball.
 							</p>
 						</div>
-						<div className={styles.wrappedSection}>
-							<h4>Wireframes and Design Development</h4>
+						<div className={`${styles.content} ${styles.inside}`}>
+							<h3>Design Approach</h3>
 							<p>
-								Once the initial concept was approved by the betting department,
-								we proceeded to develop wireframes and designs for the apps. We
-								consulted our statisticians periodically during this phase to
-								ensure accuracy and alignment with user needs. This was crucial
-								as we had to get everything right for the set launch date.
+								The LiveStats applications required a unique design approach. For
+								AFLS, one of the challenges was creating new patterns for entering
+								and selecting player numbers. For IHLS, tracking the number of
+								players on the pitch was a unique challenge. Usability was
+								prioritized over aesthetics. Feedback from SIDs was incorporated
+								to ensure the applications were user-friendly.
 							</p>
 						</div>
-						<div className={styles.wrappedSection}>
-							<h4>Tools and Skills Used</h4>
-							<ul>
-								<li>Balsamiq for wireframes and sketching</li>
-								<li>Sketch App for creating designs</li>
-								<li>Axure 9 for layout and extensive prototypes</li>
-								<li>InVision for prototyping and presenting designs</li>
-							</ul>
-						</div>
-						<div className={styles.wrappedSection}>
-							<h4>Main Activities</h4>
-							<div>
+						<div className={`${styles.content} ${styles.wrapped}`}>
+							<div className={styles.wrappedSection}>
+								<h4>Concept Development and Team Collaboration</h4>
+								<p>
+									With our concepts of game flows in place, we facilitated another
+									workshop within our development team. This workshop allowed team
+									members to raise questions, voice concerns, and share ideas,
+									fostering a collaborative environment.
+								</p>
+							</div>
+							<div className={styles.wrappedSection}>
+								<h4>Wireframes and Design Development</h4>
+								<p>
+									Once the initial concept was approved by the betting department,
+									we proceeded to develop wireframes and designs for the apps. We
+									consulted our statisticians periodically during this phase to
+									ensure accuracy and alignment with user needs. This was crucial
+									as we had to get everything right for the set launch date.
+								</p>
+							</div>
+							<div className={styles.wrappedSection}>
+								<h4>Tools and Skills Used</h4>
 								<ul>
-									<li>UX Design</li>
-									<li>User Research</li>
-									<li>Usability Testing</li>
-									<li>Stakeholder Management</li>
-									<li>Project Management</li>
-									<li>Documentation</li>
-									<li>Collaboration</li>
-									<li>Wireframing</li>
-									<li>Prototyping</li>
+									<li>Balsamiq for wireframes and sketching</li>
+									<li>Sketch App for creating designs</li>
+									<li>Axure 9 for layout and extensive prototypes</li>
+									<li>InVision for prototyping and presenting designs</li>
 								</ul>
+							</div>
+							<div className={styles.wrappedSection}>
+								<h4>Main Activities</h4>
+								<div>
+									<ul>
+										<li>UX Design</li>
+										<li>User Research</li>
+										<li>Usability Testing</li>
+										<li>Stakeholder Management</li>
+										<li>Project Management</li>
+										<li>Documentation</li>
+										<li>Collaboration</li>
+										<li>Wireframing</li>
+										<li>Prototyping</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -386,7 +385,6 @@ const ProjectGeniusSports: FunctionComponent = () => {
 				<SectionFluidImage
 					iMG="/img1@2x.png"
 					caption="One of the concepts born in IceHockey LiveStats workshop"
-					sectionFluidImageHeight="42.06rem"
 				/>
 				<Section name="gsIHLS" type="wrapper" flexDirection="column">
 					<div className={`${styles.content} ${styles.inside}`}>
@@ -422,7 +420,7 @@ const ProjectGeniusSports: FunctionComponent = () => {
 					caption="Axure prototypes were used heavily for usability testing and helped immensely to empathise with users"
 					// sectionFluidImageHeight="31.25rem"
 				/>
-        <Section name="gsResults" type="wrapper" flexDirection="column">
+        		<Section name="gsResults" type="wrapper" flexDirection="column">
           <div className={`${styles.content} ${styles.inside}`}>
             <h2>LiveStats Family</h2>
             <p>
@@ -460,12 +458,12 @@ const ProjectGeniusSports: FunctionComponent = () => {
             </p>
           </div>
 				</Section>
-        <SectionFluidImage
+        		<SectionFluidImage
 					iMG="/img2@2x.png"
 					caption="One of the concepts born in IceHockey LiveStats workshop"
-					sectionFluidImageHeight="51.25rem"
+					// sectionFluidImageHeight="51.25rem"
 				/>
-        <Section name="gsConclusion" type="wrapper" flexDirection="column">
+        		<Section name="gsConclusion" type="wrapper" flexDirection="column">
           <div className={`${styles.content} ${styles.inside}`}>
             <h2>Results and Conclusion</h2>
             <p>
@@ -485,11 +483,11 @@ const ProjectGeniusSports: FunctionComponent = () => {
               deliver solutions that satisfy all parties involved.
             </p>
           </div>
-				</Section>
-        <SectionGradientImage />
-			</main>
-			<Footer />
-		</div>
+		</Section>
+		<SectionGradientImage />
+	</div>
+	<Footer />
+</main>
 	);
 };
 
