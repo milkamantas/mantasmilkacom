@@ -27,6 +27,9 @@
   color: inherit;
   flex: 1;
 }
+.nav a::after {
+  display: none;
+}
 .nav.open {
   display: flex;
   position: absolute;

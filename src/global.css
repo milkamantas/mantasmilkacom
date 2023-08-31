@@ -58,6 +58,27 @@ p {
 h2 + p {
   margin-top: 0.5rem;
 }
+a:-webkit-any-link {
+  color: var(--color-black);
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+a::after {
+  display: block;
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: var(--color-black);
+  opacity: 0.64;
+  transition: 0.42s ease-in-out;
+}
+a:hover::after {
+  opacity: 0.92;
+}
 main ul {
   display: block;
   list-style-type: disc;

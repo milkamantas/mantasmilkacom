@@ -18,6 +18,9 @@
   transition: all 0.420s ease-in-out;
   color: var(--color-white);
 }
+.cta h4 {
+  color: var(--color-white);
+}
 .cta:hover {
   background-color: #1f1f1f;
 }
