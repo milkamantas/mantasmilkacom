@@ -70,14 +70,15 @@ a::after {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -1px;
   height: 1px;
   background-color: var(--color-black);
-  opacity: 0.64;
+  opacity: 0.48;
   transition: 0.42s ease-in-out;
 }
 a:hover::after {
   opacity: 0.92;
+  transform: translateY(-1px);
 }
 main ul {
   display: block;

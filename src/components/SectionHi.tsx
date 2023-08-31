@@ -2,6 +2,7 @@ import styles from "./SectionHi.module.css";
 import { FunctionComponent } from "react";
 import Logo from "../components/Logo";
 import Section from "../components/Section";
+import { Link } from "react-router-dom";
 
 
 export type SectionHi = {
@@ -36,15 +37,11 @@ const SectionHi: FunctionComponent = () => {
             </p>
             <p>
               {`If you're curious to know more or have a project you want to talk over, feel free to reach out at `}
-              <a
-                className={styles.mantasmantasmilkacom}
-                href="mailto:mantas@mantasmilka.com"
-                target="_blank"
-              >
+              <Link to="mailto:mantas@mantasmilka.com">
                 <span className={styles.mantasmantasmilkacom1}>
                   mantas@mantasmilka.com
                 </span>
-              </a>
+              </Link>
               .
             </p>
           </div>

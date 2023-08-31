@@ -18,12 +18,16 @@ const Footer: FunctionComponent = () => {
       <div className={styles.logoWrap}>
         <h4>Mantas Milka</h4>
         <div className={styles.contactLinks}>
-          <h4 className={styles.contactLinkText}>
-            mantas@mantasmilka.com
-          </h4>
-          <h4 className={styles.contactLinkText}>
-            +370 624 59 890
-          </h4>
+          <Link to="mailto:mantas@mantasmilka.com">
+            <h4 className={styles.contactLinkText}>
+              mantas@mantasmilka.com
+            </h4>
+          </Link>
+          <Link to="tel:+37062459890">
+            <h4 className={styles.contactLinkText}>
+              +370 624 59 890
+            </h4>
+          </Link>
         </div>
         <SocialNav />
       </div>
