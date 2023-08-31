@@ -110,6 +110,16 @@
     max-width: 37.25rem;
   }
 }
+@media screen and (max-width: 640px) {
+  .companies {
+    max-width: 100%;
+    padding: var(--gap-xl) var(--padding-lg);
+  }
+  .logoul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media screen and (max-width: 420px) {
   .paragraph {
     flex: unset;
@@ -121,7 +131,7 @@
     justify-content: flex-start;
     box-sizing: border-box;
     max-width: 100%;
-    padding: var(--padding-md) var(--padding-sm);
+    padding: var(--gap-lg) var(--padding-lg);
   }
   .wrapper {
     gap: var(--gap-2xl);

@@ -1,0 +1,83 @@
+.content {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: calc(30rem - 1.5rem);
+}
+.content.inside {
+  gap: 0.75rem;
+}
+.left {
+  padding-right: 50%;
+}
+.right {
+  padding-left: 50%;
+}
+.wrapped {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 100%;
+  min-width: 100%;
+}
+.wrapped .wrappedSection {
+  flex: 1 0 40%;
+  max-width: calc(30rem - (3rem));
+}
+.wrappedSection ul {
+  margin-top: 0.75rem;
+}
+
+.main,
+.projectGeniussports,
+.wrapper11 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.main {
+  align-self: stretch;
+}
+.projectGeniussports {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--paragraph-size);
+  color: var(--color-black);
+  font-family: var(--desktop-caption);
+}
+.main .gsIntro .wrapper {
+  flex-direction: column;
+}
+@media screen and (max-width: 960px) {
+
+  .main .gsIntro .wrapper {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 420px) {
+  .left {
+    padding-right: 0;
+  }
+  .right {
+    padding-left: 0;
+  }
+  .wrapped .wrappedSection {
+    flex: 1 0 100%;
+    max-width: 100%;
+    margin-top: var(--size-md);
+  }
+  .content {
+    gap: var(--size-md);
+  }
+  .content.inside {
+    margin-top: var(--size-md);
+  }
+}
