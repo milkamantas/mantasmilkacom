@@ -2,6 +2,7 @@ import { FunctionComponent, useCallback } from "react";
 import SocialNav from "./SocialNav";
 import styles from "./Footer.module.css";
 import Section from "./Section";
+import { Link } from "react-router-dom";
 
 const Footer: FunctionComponent = () => {
 
@@ -30,7 +31,9 @@ const Footer: FunctionComponent = () => {
         <h4>Projects</h4>
         <div className={styles.projectsList}>
           {/* <div className={styles.contactLinks}>Close-Ups</div> */}
-          <h4>LiveStats</h4>
+          <Link className={styles.cta} to="/projectgeniussports">
+            <h4>LiveStats</h4>
+          </Link>
         </div>
       </div>
     </Section>
