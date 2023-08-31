@@ -11,8 +11,8 @@
   justify-content: flex-start;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: 66%;
-  background-position-y: 40%;
+  background-position-x: 0;
+  background-position-y: 50%;
   font-family: var(--desktop-caption);
 }
 .wrapper {
@@ -41,6 +41,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .section {
+    background-position-x: 0%;
+  }
   .content {
     flex-direction: column;
   }
@@ -52,10 +55,11 @@
 @media screen and (max-width: 960px) {
   .section {
     padding: var(--padding-3xl) 0;
+    background-position-x: 30%;
   }
   .wrapper {
-    max-width: 40rem;
-    padding: 0;
+    max-width: 42rem;
+    padding: 0 3rem;
     flex-direction: column;
     gap: var(--gap-lg);
   }
@@ -67,25 +71,32 @@
 
 @media screen and (max-width: 640px) {
   .wrapper {
-    max-width: 26rem;
+    max-width: 34rem;
+  }
+  .section {
+    background-position-x: 60%;
   }
 }
 @media screen and (max-width: 420px) {
   .section {
     padding: var(--padding-2xl) 0;
+    background-position-x: 55%;
   }
   .content {
     flex-direction: column;
   }
   .wrapper {
-    max-width: 20rem;
-    padding: 0;
+    max-width: 22rem;
+    padding: 0 2rem;
     flex-direction: column;
-    gap: var(--gap-xs);
+    gap: var(--gap-md);
   }
 }
 @media screen and (max-width: 320px) {
   .wrapper {
     max-width: 18rem;
+  }
+  .section {
+    background-position-x: 60%;
   }
 }

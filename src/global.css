@@ -73,7 +73,7 @@ main ul li {
   font-weight: 300;
 }
 main {
-  margin-top: 5.5rem;
+  padding-top: 5.5rem;
 }
 body {
   margin: 0;
@@ -100,6 +100,7 @@ body {
   --size-3xl: 6rem;   /* 96px at default root font-size */
   --size-4xl: 8rem;   /* 128px at default root font-size */
   --size-5xl: 10rem;  /* 160px at default root font-size */
+
   /* Gap variables using the size variables */
   --gap-xxs: var(--size-xxs);
   --gap-xs: var(--size-xs);
@@ -123,7 +124,7 @@ body {
   --padding-4xl: var(--size-4xl);
   --padding-5xl: var(--size-5xl);
   /* font sizes */
-  --h1-size: var(--size-4xl);
+  --h1-size: var(--size-3xl);
   --h2-size: var(--size-xl);
   --h3-size: var(--size-lg);
   --h4-size: 1.25rem;
@@ -134,13 +135,17 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  main {
-    margin-top: 6.5rem;
-  }
+    main {
+      padding-top: 5.5rem;
+    }
+    :root {
+      --h1-size: var(--size-2xl);
+      --h2-size: var(--size-xl);
+    }
 }
 @media screen and (max-width: 960px) {
     main {
-      /* margin-top: 4.5rem; */
+      padding-top: 4.5rem;
     }
     :root {
       --h1-size: var(--size-2xl);
@@ -149,7 +154,8 @@ body {
 }
 @media screen and (max-width: 420px) {
     main {
-      margin-top: 4.5rem;
+      padding-top: 4.5rem;
+      margin-top: 0;
     }
     
     :root {

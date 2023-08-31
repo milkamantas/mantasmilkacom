@@ -62,6 +62,9 @@
     flex: unset;
     align-self: stretch;
   }
+  .content {
+    gap: var(--gap-lg);
+  }
   .imgIcon {
     height: 15rem;
   }
