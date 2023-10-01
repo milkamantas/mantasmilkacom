@@ -1,3 +1,4 @@
+git config --global user.email "email@example.com"
 import {
   Routes,
   Route,
@@ -6,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home";
 import ProjectGeniusSports from "./pages/ProjectGeniusSports";
+import ProjectVinted from "./pages/VintedCloseUps";
 import { useEffect } from "react";
 
 function App() {
@@ -32,6 +34,10 @@ function App() {
         title = "LiveStats - Mantas Milka";
         metaDescription = "Work in Genius Sports";
         break;
+      case "/vintedvinted":
+        title = "LiveStats - Mantas Milka";
+        metaDescription = "Work in Genius Sports";
+        break;
     }
 
     if (title) {
@@ -52,6 +58,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/projectgeniussports" element={<ProjectGeniusSports />} />
+      <Route path="/projectvinted" element={<ProjectVinted />} />
     </Routes>
   );
 }

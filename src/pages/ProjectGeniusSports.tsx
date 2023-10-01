@@ -43,6 +43,7 @@ const ProjectGeniusSports: FunctionComponent = () => {
 				subTitle="Genius Sports"
 				heroColor="#ffffff"
 				heroBackgroundImage="/hero2@3x.png"
+				fullHeight={true}
 			/>
 			<div className={styles.main}>
 				<Section name="gsIntro" type="wrapper" flexDirection="row">
@@ -110,7 +111,7 @@ const ProjectGeniusSports: FunctionComponent = () => {
 						</p>
 					</div>
 				</Section>
-				<SectionGradientQuote />
+				<SectionGradientQuote quote="LiveStats bridges the gap between American football and basketball for statisticians, harmonizing core principles. In the high-stakes world of betting, it's the gold standard for accuracy and real-time updates." />
 				<Section name="gsChallenges" type="wrapper" flexDirection="column">
 					<div className={`${styles.content} ${styles.inside}`}>
 						<h2>Challenges</h2>
