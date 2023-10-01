@@ -8,6 +8,7 @@ type HeroType = {
   showTopSubtitle?: boolean;
   title?: string;
   subTitle?: string;
+  fullHeight?: boolean;
 
   /** Style props */
   heroColor?: Property.Color;
@@ -22,6 +23,7 @@ const Hero: FunctionComponent<HeroType> = memo(
     subTitle,
     heroColor,
     heroBackgroundImage,
+    fullHeight,
   }) => {
     const heroStyle: CSS.Properties = useMemo(() => {
       return {
@@ -30,8 +32,18 @@ const Hero: FunctionComponent<HeroType> = memo(
       };
     }, [heroColor, heroBackgroundImage]);
 
+    const sectionStyle: CSS.Properties = useMemo(() => {
+      return fullHeight ? { minHeight: "90vh" } : {};
+    }, [fullHeight]);
+
     return (
-      <Section name="Hero" flexDirection="column" type="wrapper" bgImg={heroBackgroundImage}>
+      <Section 
+        name="Hero" 
+        flexDirection="column" 
+        type="wrapper" 
+        bgImg={heroBackgroundImage}
+        style={sectionStyle}  // <-- Pass the style prop to Section
+      >
         <div className={styles.content} style={heroStyle}>
           {showTopSubtitle && (
             <h2>{topSubtitle}</h2>

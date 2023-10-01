@@ -1,17 +1,20 @@
 import { FunctionComponent } from "react";
 import styles from "./SectionGradientQuote.module.css";
-import Section from "../Section";
 
+type SectionGradientQuoteProps = {
+  quote?: string;
+  gradientType?: "gs" | "vinted";
+};
 
-
-const SectionGradientQuote: FunctionComponent = () => {
+const SectionGradientQuote: FunctionComponent<SectionGradientQuoteProps> = ({ 
+  quote = "Default quote text here.", 
+  gradientType = "gs" 
+}) => {
   return (
-    <div className={styles.sectionGradient}>
+    <div className={`${styles.sectionGradient} ${styles[gradientType]}`}>
       <div className={styles.wrapper}>
         <h3>
-          LiveStats bridges the gap between American football and basketball for
-          statisticians, harmonizing core principles. In the high-stakes world
-          of betting, it's the gold standard for accuracy and real-time updates.
+          {quote}
         </h3>
       </div>
     </div>

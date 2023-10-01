@@ -17,7 +17,7 @@
 }
 .wrapper {
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   gap: var(--gap-2xl);
   max-width: 60rem;
   width: 100%;

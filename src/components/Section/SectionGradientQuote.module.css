@@ -12,7 +12,6 @@
   margin: 0 auto;
 }
 .sectionGradient {
-  background: linear-gradient(-77.68deg, #011327, #05264b);
   width: 100%;
   padding: var(--padding-4xl) 0;
   box-sizing: border-box;
@@ -25,6 +24,14 @@
 h3 {
   font-weight: 100;
 }
+.sectionGradient.gs {
+  background: linear-gradient(-77.68deg, #011327, #05264b);
+}
+
+.sectionGradient.vinted {
+  background: linear-gradient(302deg, #004654 27.45%, #007822 106.14%);
+}
+
 @media screen and (max-width: 960px) {
   .wrapper {
     max-width: 37.25rem;
