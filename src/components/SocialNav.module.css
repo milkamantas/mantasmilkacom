@@ -21,7 +21,7 @@
   height: var(--size-md);
 }
 
-.img {
+.SocialNav img {
   height: var(--size-md);
   width: var(--size-md);
   max-width: 100%;
