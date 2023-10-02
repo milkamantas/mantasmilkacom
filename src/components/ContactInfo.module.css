@@ -1,0 +1,13 @@
+/* ContactInfo.module.css */
+.ContactInfoClass {
+    display: none;
+  }
+  
+  .footerLinksOpen {
+    margin-top: var(--silgze-lg);
+    display: flex;
+    flex-flow: column;
+  }
+  .footerLinksOpen h4+h4 {
+    margin-top: var(--size-sm);
+  }

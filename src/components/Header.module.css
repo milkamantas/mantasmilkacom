@@ -1,6 +1,15 @@
 .mantasMilka {
   position: relative;
 }
+
+.SocialNavInHeader {
+  justify-content: end;
+}
+
+.SocialNavInHeader a img {
+  transform: translateY(-1.5rem);
+}
+
 .logoWrap {
   display: flex;
   flex-direction: column;
@@ -10,11 +19,20 @@
   font-size: 1.25rem;
   font-weight: 300;
 }
+
+.logoWrap img {
+  width: 188px;
+  height: 24px;
+}
+
+
+.logoWrap a::after {
+  display: none;
+}
+
 .header {
   flex-direction: row;
   align-items: center;
-}
-.header {
   align-self: stretch;
   background-color: var(--color-white);
   height: 5.5rem;
@@ -33,17 +51,30 @@
   background: white;
   z-index: 1;
 }
+
 @media screen and (max-width: 960px) {
+
+  .SocialNavInHeader {
+    display: none;
+  }
+
   .logoWrap {
     width: auto;
     align-self: unset;
   }
+
+  .logoWrap a {
+    display: flex;
+  }
+
   .links {
     display: none;
   }
+
   .mobilemenu {
     display: flex;
   }
+
   .header {
     height: auto;
     flex-direction: row;
@@ -52,19 +83,24 @@
     justify-content: space-between;
   }
 }
+
 @media screen and (max-width: 420px) {
   .links {
     display: none;
   }
+
   .mobilemenuClosed {
     display: flex;
   }
+
   .mobilemenuOpen {
     display: none;
   }
+
   .mobilemenu {
     display: flex;
   }
+
   .header {
     flex-direction: row;
     gap: var(--gap-0);

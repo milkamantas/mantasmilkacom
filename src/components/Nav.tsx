@@ -1,6 +1,10 @@
 // Nav.js
 import { FunctionComponent } from "react";
 import styles from "./Nav.module.css";
+import ContactInfo from "./ContactInfo";
+import ProjectList from "./ProjectList";
+import contactInfoStyles from './ContactInfo.module.css';
+import projectListStyles from './ProjectList.module.css';
 
 export type NavType = {
   /** Action props */
@@ -24,9 +28,9 @@ const Nav: FunctionComponent<NavType> = ({
     e.preventDefault();
     setIsOpen?.(false);
     clickHandler?.();
-};
+  };
 
-return (
+  return (
     <nav className={navClassName}>
       <a className={styles.navLink} href="#HeroTitle" onClick={(e) => handleLinkClick(e, onAboutMeClick)}>
         Home
@@ -37,7 +41,11 @@ return (
       <a className={styles.navLink} href="#Footer" onClick={(e) => handleLinkClick(e, onContactMeClick)}>
         Contact me
       </a>
+      <ProjectList className={isOpen ? projectListStyles.footerLinksOpen : projectListStyles.defaultProjectListClass} />
+      <ContactInfo className={isOpen ? contactInfoStyles.footerLinksOpen : contactInfoStyles.ContactInfoClass} />
+
     </nav>
+
   );
 
 };

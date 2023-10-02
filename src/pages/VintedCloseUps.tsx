@@ -140,7 +140,7 @@ const ProjectVintedCloseUps: FunctionComponent = () => {
 				</Section>
 				<SectionFluidImage
 					videoSrc="/prototype_1.mp4"
-					caption="IceHockey LiveStats workshop"
+					caption="Very first prototype done to test with stakeholders"
 				/>
 				<Section name="gsProcess" type="wrapper" flexDirection="column">
 					<div className={styles.content}>
@@ -271,7 +271,7 @@ const ProjectVintedCloseUps: FunctionComponent = () => {
 				</Section>
 				<SectionFluidImage
 					videoSrc="/onboarding.mp4"
-					caption="One of the concepts born in IceHockey LiveStats workshop"
+					caption="Onboarding video showing off various features for members"
 				/>
 				<Section name="gsIHLS" type="wrapper" flexDirection="column">
 					<div className={`${styles.content} ${styles.inside}`}>
