@@ -50,6 +50,8 @@
   justify-content: flex-start;
   gap: var(--gap-xs);
 }
+
+
 @media screen and (max-width: 960px) {
     .mobilemenu {
     display: flex;

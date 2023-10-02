@@ -1,4 +1,3 @@
-git config --global user.email "email@example.com"
 import {
   Routes,
   Route,
@@ -8,9 +7,11 @@ import {
 import Home from "./pages/Home";
 import ProjectGeniusSports from "./pages/ProjectGeniusSports";
 import ProjectVinted from "./pages/VintedCloseUps";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { BeatLoader } from 'react-spinners';
 
 function App() {
+  const [loading, setLoading] = useState(true); // Add this state
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
@@ -31,12 +32,12 @@ function App() {
         metaDescription = "";
         break;
       case "/projectgeniussports":
-        title = "LiveStats - Mantas Milka";
+        title = "LiveStats";
         metaDescription = "Work in Genius Sports";
         break;
       case "/vintedvinted":
-        title = "LiveStats - Mantas Milka";
-        metaDescription = "Work in Genius Sports";
+        title = "Vinted";
+        metaDescription = "Close-Ups - Elevating Online Shopping with Immersive Visual Experiences";
         break;
     }
 
@@ -52,14 +53,22 @@ function App() {
         metaDescriptionTag.content = metaDescription;
       }
     }
+
+    setLoading(false); // Hide the loader after setting the title and meta description
   }, [pathname]);
 
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/projectgeniussports" element={<ProjectGeniusSports />} />
-      <Route path="/projectvinted" element={<ProjectVinted />} />
-    </Routes>
+    <>
+      {loading ? (
+        <BeatLoader color="#123abc" loading={loading} size={15} />
+      ) : (
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projectgeniussports" element={<ProjectGeniusSports />} />
+          <Route path="/projectvinted" element={<ProjectVinted />} />
+        </Routes>
+      )}
+    </>
   );
 }
 export default App;

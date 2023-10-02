@@ -1,14 +1,61 @@
-.logoWrap h4, .projects h4 {
-  font-weight: 500;
-}
-.logoWrap .contactLinks h4, .projects .projectsList h4 {
-  position: relative;
+/* Common styles for h4 elements */
+h4 {
   font-weight: 300;
 }
+
+.leftSide {
+  margin-right: auto;
+  display: flex;
+  flex-flow: column;
+}
+
+.rightSide {
+  margin-left: auto;
+  display: flex;
+}
+
+.leftSide a::after, .rightSide a::after {
+  display: none;
+}
+
+.SocialNavInFooter {
+  margin-top: var(--size-md) !important;
+  justify-content: flex-start;
+}
+
+.contactInfoInFooter {
+  /* your specific styles for ContactInfo in Footer */
+  display: flex;
+  flex-direction: column;
+}
+.contactInfoInFooter h4 {
+  margin-top: var(--size-xs);
+}
+
+.projectListInFooter {
+  /* your specific styles for ProjectList in Footer */
+  display: flex;
+  flex-direction: column;
+}
+
+.projectListInFooter a {
+  margin-top: var(--size-xs);
+}
+
+/* Common styles for nested h4 elements */
+.logoWrap h4,
+.projects h4 {
+  font-weight: 300;
+  position: relative;
+}
+
+/* Reset styles for lists */
 .logoWrap ul {
   margin-block-start: 0;
   padding-inline-start: 0;
 }
+
+/* Styles for contact links */
 .contactLinks {
   display: flex;
   flex-direction: column;
@@ -17,22 +64,21 @@
   gap: var(--gap-xs);
   color: var(--color-black);
 }
-.cvChild {
+
+/* Styles for CV */
+.cvChild,
+.cv,
+.cv1 {
+  width: 24px;
+  height: 24px;
   position: absolute;
   top: 0;
   left: 0;
   border-radius: var(--size-xs);
   background-color: var(--color-black);
-  height: 24px;
 }
 
-.cv,
-.cv1,
-.cvChild {
-  width: 24px;
-}
 .cv1 {
-  position: absolute;
   top: calc(50% - 7px);
   left: calc(50% - 12px);
   font-weight: 500;
@@ -40,10 +86,8 @@
   align-items: center;
   justify-content: center;
 }
-.cv {
-  position: relative;
-  height: 24px;
-}
+
+/* Styles for social links */
 .social {
   width: 188px;
   display: flex;
@@ -55,6 +99,8 @@
   font-size: var(--caption-size);
   color: var(--color-white);
 }
+
+/* Styles for logo wrapper */
 .logoWrap {
   display: flex;
   flex-direction: column;
@@ -62,29 +108,54 @@
   justify-content: center;
   gap: var(--gap-2xl);
 }
+
+/* Styles for projects */
+.projects,
+.projectsList {
+  display: flex;
+  align-items: flex-start;
+}
+
+.projects {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-2xl);
+  margin-left: auto;
+}
+
 .projectsList {
   flex-direction: column;
   justify-content: flex-start;
   gap: var(--gap-xs);
 }
-.projectsList,
-.projects {
-  display: flex;
-  align-items: flex-start;
-  margin-left: auto;
-}
-.projects {
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: var(--gap-2xl);
-}
+
+
+/* Media queries */
 @media screen and (max-width: 960px) {
+  /* Add styles specific to this breakpoint if needed */
+  .FooterLinks {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .contactLinks {
+    align-items: center;
+  }
+  .projects {
+    margin-left: auto;
+  }
+  .projectsList {
+    justify-content: start;
+  }
 }
+
 @media screen and (max-width: 420px) {
   .projects {
     margin-left: auto;
   }
-  .logoWrap, .projects {
+
+  .logoWrap,
+  .projects {
     gap: var(--gap-sm);
   }
 }

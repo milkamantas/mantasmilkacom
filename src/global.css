@@ -1,108 +1,9 @@
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/public/HelveticaNeue-Light-08.ttf");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/public/HelveticaNeue-01.ttf");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/public/HelveticaNeue-Medium-11.ttf");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/public/HelveticaNeue-Thin-13.ttf");
-  font-weight: 100;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/public/HelveticaNeue-Bold-02.ttf");
-  font-weight: 700;
-}
-h1, h2, h3, h4, h5, p {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-h1 {
-  font-size: var(--h1-size);
-  line-height: calc(var(--h1-size) * 1.2);
-  font-weight: 300;
-}
-h2 {
-  font-size: var(--h2-size);
-  line-height: calc(var(--h2-size) * 1.2);
-  font-weight: 300;
-}
-h3 {
-  font-size: var(--h3-size);
-  line-height: calc(var(--h3-size) * 1.25);
-  font-weight: 300;
-}
-h4 {  
-  font-size: var(--h4-size);
-  line-height: calc(var(--h4-size) * 1.5);
-  font-weight: 300;
-}
-p {
-  font-size: var(--paragraph-size);
-  line-height: calc(var(--paragraph-size) * 1.5);
-  font-weight: 300;
-  margin-top: 0.75rem;
-}
-h2 + p {
-  margin-top: 0.5rem;
-}
-a:-webkit-any-link {
-  color: var(--color-black);
-  cursor: pointer;
-  text-decoration: none;
-  position: relative;
-}
-a::after {
-  display: block;
-  content: " ";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 1px;
-  background-color: var(--color-black);
-  opacity: 0.64;
-  transition: 0.42s ease-in-out;
-}
-a:hover::after {
-  opacity: 0.92;
-}
-main ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 0.75rem;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  padding-inline-start: 2rem;
-  margin-top: 0;
-}
-main ul li {
-  margin-bottom: var(--size-xs);
-  font-weight: 300;
-}
-main {
-  padding-top: 5.5rem;
-}
-body {
-  margin: 0;
-  line-height: normal;
-}
+/* Import Open Sans from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;300;400;500;700&display=swap');
+
 :root {
   /* fonts */
-  --desktop-caption: "Helvetica Neue";
+  --desktop-caption: "Open Sans";
   --font-inherit: inherit;
   /* Colors */
   --color-white: #ffffff;
@@ -155,61 +56,115 @@ body {
   --title-size: var(--size-xl);
 }
 
-@media screen and (max-width: 1200px) {
-    main {
-      padding-top: 5.5rem;
-    }
-    :root {
-      --h1-size: var(--size-2xl);
-      --h2-size: var(--size-xl);
-    }
+body {
+  font-family: var(--desktop-caption), sans-serif;
+  margin: 0;
+  line-height: normal;
 }
-@media screen and (max-width: 960px) {
-    main {
-      padding-top: 4.5rem;
-    }
-    :root {
-      --h1-size: var(--size-2xl);
-      --h2-size: var(--size-xl);
-    }
-}
-@media screen and (max-width: 420px) {
-    main {
-      padding-top: 4.5rem;
-      margin-top: 0;
-    }
-    
-    :root {
-      --h1-size: var(--size-xl);
-      --h2-size: var(--size-lg);
-      --h3-size: var(--size-md);
-      --h4-size: 1.25rem;
 
-    }
-    h1 {
-      font-size: var(--h1-size);
-      line-height: calc(var(--h1-size) * 1.2);
-      font-weight: 300;
-    }
-    h2 {
-      font-size: var(--h2-size);
-      line-height: calc(var(--h2-size) * 1.2);
-      font-weight: 300;
-    }
-    h3 {
-      font-size: var(--h3-size);
-      line-height: calc(var(--h3-size) * 1.25);
-      font-weight: 300;
-    }
-    h4 {  
-      font-size: var(--h4-size);
-      line-height: calc(var(--h4-size) * 1.5);
-      font-weight: 300;
-    }
-    p {
-      font-size: var(--paragraph-size);
-      line-height: calc(var(--paragraph-size) * 1.5);
-      font-weight: 300;
-      margin-top: 0.75rem;
-    }
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+/* ... (rest of the CSS) ... */
+
+h1 {
+  font-size: var(--h1-size);
+  line-height: calc(var(--h1-size) * 1.2);
+  font-weight: 300;
+}
+
+h2 {
+  font-size: var(--h2-size);
+  line-height: calc(var(--h2-size) * 1.2);
+  font-weight: 300;
+}
+
+h3 {
+  font-size: var(--h3-size);
+  line-height: calc(var(--h3-size) * 1.25);
+  font-weight: 300;
+}
+
+h4 {  
+  font-size: var(--h4-size);
+  line-height: calc(var(--h4-size) * 1.5);
+  font-weight: 300;
+}
+
+p {
+  font-size: var(--paragraph-size);
+  line-height: calc(var(--paragraph-size) * 1.5);
+  font-weight: 300;
+  margin-top: 0.75rem;
+}
+
+h2 + p {
+  margin-top: 0.5rem;
+}
+
+a {
+  color: var(--color-black);
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+
+a::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: var(--color-black);
+  opacity: 0.64;
+  transition: 0.42s ease-in-out;
+}
+
+a:hover::after {
+  opacity: 0.92;
+}
+
+main ul {
+  list-style-type: disc;
+  padding-inline-start: 2rem;
+  margin-top: 0;
+}
+
+main {
+  padding-top: 5.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding-top: 5.5rem;
+  }
+  :root {
+    --h1-size: var(--size-2xl);
+    --h2-size: var(--size-xl);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  main {
+    padding-top: 4.5rem;
+  }
+  :root {
+    --h1-size: var(--size-2xl);
+    --h2-size: var(--size-xl);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  main {
+    padding-top: 4.5rem;
+    margin-top: 0;
+  }
+  :root {
+    --h1-size: var(--size-xl);
+    --h2-size: var(--size-lg);
+    --h3-size: var(--size-md);
+    --h4-size: 1.25rem;
+  }
 }

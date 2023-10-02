@@ -1,40 +1,23 @@
-import { FunctionComponent, useCallback } from "react";
-import SocialNav from "./SocialNav";
+import { FunctionComponent } from "react";
 import styles from "./Footer.module.css";
 import Section from "./Section";
-import { Link } from "react-router-dom";
+import SocialNav from "./SocialNav";
+import ContactInfo from "./ContactInfo";
+import ProjectList from "./ProjectList";
+import socialNavStyles from './SocialNav.module.css'
+import contactInfoStyles from './ContactInfo.module.css';
+import projectListStyles from './ProjectList.module.css';
+
 
 const Footer: FunctionComponent = () => {
-
-  const onContactMeClick = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='platformdesktop']");
-    if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
-    }
-  }, []);
-
   return (
     <Section name="Footer" type="wrapper" flexDirection="row">
-      <div className={styles.logoWrap}>
-        <h4>Mantas Milka</h4>
-        <div className={styles.contactLinks}>
-          <h4 className={styles.contactLinkText}>
-            mantas@mantasmilka.com
-          </h4>
-          <h4 className={styles.contactLinkText}>
-            +370 624 59 890
-          </h4>
-        </div>
-        <SocialNav />
+      <div className={styles.leftSide}>
+        <ContactInfo className={`${contactInfoStyles.ContactInfoClass} ${styles.contactInfoInFooter}`} />
+        <SocialNav className={`${socialNavStyles.SocialNav} ${styles.SocialNavInFooter}`} />
       </div>
-      <div className={styles.projects}>
-        <h4>Projects</h4>
-        <div className={styles.projectsList}>
-          {/* <div className={styles.contactLinks}>Close-Ups</div> */}
-          <Link className={styles.cta} to="/projectgeniussports">
-            <h4>LiveStats</h4>
-          </Link>
-        </div>
+      <div className={styles.rightSide}>
+        <ProjectList className={`${projectListStyles.defaultProjectListClass} ${styles.projectListInFooter}`} />
       </div>
     </Section>
   );

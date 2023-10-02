@@ -1,0 +1,18 @@
+/* ProjectList.module.css */
+.defaultProjectListClass {
+    /* some styles */
+    display: none;
+  }
+  
+  .footerLinksOpen {
+    /* some styles */
+    margin-top: var(--size-lg);
+    display: flex;
+    flex-flow: column;
+  }
+  .footerLinksOpen a {
+    max-height: unset !important;
+  }
+  .footerLinksOpen a {
+    margin-bottom: var(--size-sm);
+  }
