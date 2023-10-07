@@ -3,8 +3,6 @@ import { Link } from "react-router-dom"; // Import the Link component
 import styles from "./Header.module.css";
 import MobileMenu from "./MobileMenu";
 import Nav from "./Nav";
-import SocialNav from "./SocialNav";
-import socialNavStyles from './SocialNav.module.css'
 
 type HeaderType = {
   /** Action props */
@@ -30,7 +28,6 @@ const Header: FunctionComponent<HeaderType> = ({
         onProjectsClick={onProjectsClick}
         onContactMeClick={onContactMeClick}
       />
-      <SocialNav className={`${socialNavStyles.SocialNav} ${styles.SocialNavInHeader}`} />
       <MobileMenu
         onAboutMeClick={onAboutMeClick}
         onProjectsClick={onProjectsClick}

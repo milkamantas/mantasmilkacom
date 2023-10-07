@@ -1,6 +1,6 @@
 .SocialNav {
-  flex: 1;
-  display: flex;
+  /* flex: 1; */
+  display: none;
   flex-direction: row;
   align-items: center;
   gap: var(--gap-lg);
@@ -32,16 +32,13 @@
 .links a::after {
   display: none;
 }
-.Footer .links {
-  padding-inline-start: 0;
-}
-img {
-  width: var(--size-md);
-}
 
 @media screen and (max-width: 960px) {
   .links {
     display: none;
+  }
+  .SocialNav {
+    display: flex;
   }
 }
 @media screen and (max-width: 420px) {

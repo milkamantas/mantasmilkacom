@@ -14,8 +14,7 @@ const MobileMenu: FunctionComponent<NavType> = ({
 
   return (
     <div className={styles.mobilemenu}>
-      <div
-        className={styles.mobilemenuClosed}
+      <div className={styles.mobilemenuClosed}
         onClick={() => setIsOpen(true)}
         style={{ display: isOpen ? "none" : "flex" }}
       >

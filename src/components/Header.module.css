@@ -7,8 +7,10 @@
 }
 
 .SocialNavInHeader a img {
-  transform: translateY(-1.5rem);
+  display: none;
 }
+
+
 
 .logoWrap {
   display: flex;
