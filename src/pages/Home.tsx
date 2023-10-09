@@ -1,5 +1,8 @@
 import { FunctionComponent, useCallback, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+// Importing the necessary components and modules
+import ShotItem from "../components/ShotItem";
+import shotItemStyles from '../components/ShotItem.module.css';
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import SectionHi from "../components/SectionHi";
@@ -46,6 +49,14 @@ const Home: FunctionComponent = () => {
         }
     }, []);
 
+    // Define the shots data
+    const shots = [
+        { imgSrc: "/Shot-VVk.png", caption: "Caption 1" },
+        { imgSrc: "/Shot-Egzotique.png", caption: "Caption 2" },
+        { imgSrc: "/Shot-Aruodas_wireframe.png", caption: "Caption 3" },
+        { imgSrc: "/path/to/image4.jpg", caption: "Caption 4" },
+    ];
+
     return (
         <main className={styles.home} data-scroll-to="main" id="main">
             <Header
@@ -82,6 +93,14 @@ const Home: FunctionComponent = () => {
                     iMG="/1ncaalivestatsforfootballnovember7th-1@2x.png"
                     to="/projectgeniussports"
                 />
+            </Section>
+            <Section name="Shots" type="wrapper" flexDirection="column" bgColor="gray">
+                <h1>Shots</h1>
+                <div className={shotItemStyles.shotsGrid}>
+                    {shots.map((shot, index) => (
+                        <ShotItem key={index} imgSrc={shot.imgSrc} caption={shot.caption} />
+                    ))}
+                </div>
             </Section>
             <Footer />
         </main>

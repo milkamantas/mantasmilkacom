@@ -1,0 +1,48 @@
+/* src/styles/Home.module.css */
+.shotsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--size-md);  /* Adjust the gap between items */
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .shotsGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--size-md);  /* Adjust the gap between items */
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .shotsGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--size-md);  /* Adjust the gap between items */
+    }
+}
+
+@media (max-width: 480px) {
+    .shotsGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--size-md);  /* Adjust the gap between items */
+    }
+}
+
+/* Additional style to maintain the aspect ratio */
+.shotItemContainer {
+    position: relative;
+    width: 100%;
+    padding-top: 50%;  /* 2:3 aspect ratio */
+}
+
+.shotItemImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
